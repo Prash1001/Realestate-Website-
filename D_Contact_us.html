@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D_Contact_us.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="#">Do<span>mo</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+            
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Rental</a></li>
+                <li><a href="#">Corporate</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li><a href="#">About Us</a></li>
+                <li class="go-premium-cta"><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="form-buttons">
+          <button id="form1-btn">Owners</button>
+          <button id="form2-btn">Tenent</button>
+          <button id="form3-btn">corporate</button>
+        </div>
+        <form id="form1">
+          <div class="row">
+          <div class="form-group">
+            <div class="col-25">
+            <label for="name">Name:</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="name" name="name" required>
+          </div>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="form-group">
+            <div class="col-25">
+            <label for="phone">Mobile No.:</label>
+            </div>
+            <div class="col-75">
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          </div>
+          </div>
+        
+          <div class="row">
+            <div class="form-group">
+              <div class="col-25">
+            <label for="project">Current Project:</label>
+            </div>  
+            <div class="col-75">
+            <select id="project" name="project" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile Development">Mobile Development</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-25">
+          
+            <label for="email">Email:</label>
+            </div>
+            <div class="col-75">
+            <input type="email" id="email" name="email" required>
+          </div>
+          </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+
+        <form id="form2" style="display: none;">
+          <div class="row">
+            <div class="form-group">
+              <div class="col-25">
+            <label for="company">Company:</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="company" name="company" required>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col-25">
+            <label for="phone">Mobile No.:</label>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+      </div>
+
+            <div class="row">
+            <div class="form-group">
+              <div class="col-25">
+            <label for="project">Interested In:</label>
+          </div>
+          <div class="col-75">
+            <select id="project" name="project" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile Development">Mobile Development</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <div class="col-25">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+      </div>
+          <button type="submit">Submit</button>
+        </form>
+        <form id="form3" style="display: none;">
+
+        <div class="row">
+        <div class="form-group">
+          <div class="col-25">
+          <label for="name">Name:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="name" name="name" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <div class="col-25">            
+          <label for="phone">Mobile No :</label>
+        </div>
+        <div class="col-75">
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="form-group">
+    <div class="col-25">  
+      <label for="message">Message:</label>
+    </div>
+    <div class="col-75">
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="form-group">
+    <div class="col-25">  
+      <label for="email">Email:</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="email" name="email" required>
+    </div>
+  </div>
+</div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<script>
+  const form1 = document.getElementById('form1');
+  const form2 = document.getElementById('form2');
+  const form3 = document.getElementById('form3');
+
+  const form1Btn = document.getElementById('form1-btn');
+  const form2Btn = document.getElementById('form2-btn');
+  const form3Btn = document.getElementById('form3-btn');
+
+  form1Btn.addEventListener('click', () => {
+    form1.style.display = 'block';
+    form2.style.display = 'none';
+    form3.style.display = 'none';
+  });
+
+  form2Btn.addEventListener('click', () => {
+    form1.style.display = 'none';
+    form2.style.display = 'block';
+    form3.style.display = 'none';
+  });
+
+  form3Btn.addEventListener('click', () => {
+    form1.style.display = 'none';
+    form2.style.display = 'none';
+    form3.style.display = 'block';
+  });
+
+</script>
+<script>
+
+  const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+  mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+  })
+
+  mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+  })
+
+
+
+</script>
+<script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
+<footer class="footer-distributed">
+    
+  <div class="footer-left">
+
+      <a class="logofooter" href="#"><img src="images/domologo.png" alt="DoMofooter"></a>
+
+      <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Rental</a>
+      
+          <a href="#">Corporate</a>
+      
+          <a href="#">Blogs</a>
+          
+          <a href="#">About Us</a>
+          
+          <a href="#">Contact Us</a>
+      </p>
+
+      <p class="footer-company-name">Company Name © 2015</p>
+  </div>
+
+  <div class="footer-center">
+
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Kamala Mills</span> Sion, Mumbai</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 9896985327</p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@domo.com</a></p>
+      </div>
+
+  </div>
+
+  <div class="footer-right">
+
+      <p class="footer-company-about">
+          <span>About the company</span>
+         Market leaders in rentals, leasing and out-right buying.
+      </p>
+
+      <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
