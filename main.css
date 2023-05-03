@@ -11,7 +11,7 @@ body {
 
 .navbar {
   background: white;
-  padding: 1em;
+  padding: 0.5em;
 }
 .navbar .logo {
   display: inline-block;
@@ -29,8 +29,11 @@ body {
 }
 .navbar .container {
   display: flex;
-  place-content: space-between;
+  justify-content: space-between;
+  align-items: center; /* Add this line */
+  padding-top: 10px; /* Adjust this value as needed */
 }
+
 .navbar .mobile-menu {
   cursor: pointer;
 }
@@ -92,7 +95,7 @@ section {
 }
 
 section.features-section {
-  background: #3a2ebb;
+  background: #111460;
   color: white;
 }
 
