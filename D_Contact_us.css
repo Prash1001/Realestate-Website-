@@ -1,4 +1,40 @@
 /* Style for the forms */
+.schedule {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px #999;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.schedule label {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.schedule select {
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.schedule button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.schedule button:hover {
+  background-color: #3e8e41;
+}
 * {
   box-sizing: border-box;
 }
@@ -101,7 +137,6 @@
 }
 
 body {
-  background: #F2F2F2;
   margin: 0;
   font-family: "Poppins";
 }
@@ -109,6 +144,7 @@ body {
 .navbar {
   background: white;
   padding: 1em;
+  place-content: space-between;
 }
 .navbar .logo {
   display: inline-block;
@@ -123,7 +159,7 @@ body {
 
 .navbar nav {
   display: none;
-}
+  display: fl;}
 .navbar .container {
   display: flex;
   place-content: space-between;

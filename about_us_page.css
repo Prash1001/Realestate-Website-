@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    text-overflow: clip ;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 1% ;
+}
+main {
+    flex: 1;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer p {
+    margin: 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    height: 400px;
+    padding: 1rem;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+ 
+}
+.card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.card p {
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card-footer p {
+    margin: 0;
+}
+.card-footer button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.card-footer button:hover {
+    background-color: #000;
+}
+img{
+    width:200px;
+    height: 200px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+.profile_admin{
+    text-align: center;
+}

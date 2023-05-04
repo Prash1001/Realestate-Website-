@@ -22,12 +22,18 @@ body {
 .header p {
 	font-size: 18px;
 }
-
+main{
+	height: 200px;
+	overflow-y: scroll ;
+}
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-top: 50px;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+height: 400px;
 }
 
 .card {
@@ -90,24 +96,16 @@ body {
 }
 
 
+
 /*Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Rubik:wght@500;700;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-:root {
-  --primary-color: #007AF3;
-}
 
-body {
-  background: #F2F2F2;
-  margin: 0;
-  font-family: "Poppins";
-}
 
 .navbar {
-  background: white;
-  padding: 1em;
+  padding: 0.5em;
 }
 .navbar .logo {
   display: inline-block;
@@ -121,11 +119,19 @@ body {
 /* Other styles for the navigation and mobile menu icons go here */
 
 .navbar nav {
-  display: none;
-}
-.navbar .container {
   display: flex;
-  place-content: space-between;
+}
+.navbar .container1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; /* Adjust this value as needed */
+}
+.container{
+
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .navbar .mobile-menu {
   cursor: pointer;
@@ -145,16 +151,8 @@ section {
   padding: 5em 2em;
 }
 
-nav.menu-btn {
-  display: block;
-}
-
 nav {
-  position: fixed;
-  z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
+
   background: #20272E;
   height: 100vh;
   padding: 1em;
@@ -184,7 +182,7 @@ nav li a:hover {
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
-  .navbar .container {
+  .navbar .containers {
     display: grid;
     grid-template-columns: 180px auto;
     justify-content: unset;
@@ -214,25 +212,44 @@ nav li a:hover {
   }
   .navbar nav li.go-premium-cta a {
     color: var(--primary-color);
-    border: 3px solid var(--primary-color);
+    border: 3px solid royalblue;
     font-weight: bold;
     border-radius: 5em;
     margin-top: -0.2em;
   }
   .navbar nav li.go-premium-cta a:hover {
-    background: var(--primary-color);
+    background: royalblue;
     color: white;
   }
 }
-
 @media only screen and (min-width: 1080px) {
-  .container {
-    width: 1080px;
+  .containers {
+
     margin: 0 auto;
-  }
-  section {
-    padding: 10em 4em;
-  }
+  }}
+/*footer*/
+.footer-distributed{
+	background: #050144;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left .logofooter {
+  display: inline-block;
+  height: 50px;
+}
+
+.footer-distributed .footer-left .logofooter  img {
+  height: 100%;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
 
