@@ -1,4 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.card-container1{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px white;
+  padding: 30px;
+
+}
+
+.card1 {
+  width: calc(33.33% - 10px);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+}
+
+.card1 img {
+  width: 300px;
+  height: 300px;
+}
+
+.card1 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card1-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card1-button:hover {
+  background-color: #0062cc;
+}
+
+.card1-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.card1-button:active {
+  background-color: #005cbf;
+  transform: translateY(1px);
+}
+
+
 :root {
   --primary-color: #007AF3;
 }

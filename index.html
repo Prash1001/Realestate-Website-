@@ -102,6 +102,61 @@
             <img src="images/room2.jpg" alt="small room photo">
         </div>
     </section>
+
+    <div class="card-container1">
+        <div class="card1">
+          <img src="https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/07/Buy_a_home.png" alt="Logo 1">
+          <h2>Buy a House</h2>
+          <p style="font-size: large; padding: 10px;">Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.</p>
+          <button class="card1-button">Learn More</button>
+        </div>
+        
+        <div class="card1">
+          <img src="https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/07/Sell_a_home.png" alt="Logo 2">
+          <h2>Sell a House</h2>
+          <p style="font-size: large; padding: 10px; padding-left: 10px;">Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.</p>
+
+          <button class="card1-button">Learn More</button>
+          </div>
+          
+        <div class="card1">
+          <img src="https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/08/Rent_a_home.png" alt="Logo 3">
+          <h2>Rent a House</h2>
+          <p style="font-size: large; padding: 10px; padding-left: 10px;">Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.</p>
+          <button class="card1-button">Learn More</button>
+        </div>
+      </div>
+
+      <script>
+        const resizeCards = () => {
+  const cardContainer = document.querySelector('.card-container1');
+  const cards = cardContainer.querySelectorAll('.card1');
+
+  cards.forEach(card => {
+    const cardWidth = card1.offsetWidth;
+    const cardHeight = card1.offsetHeight;
+    const ratio = cardHeight / cardWidth;
+
+    if (window.innerWidth <= 768) {
+      card.style.width = '';
+    } else if (window.innerWidth <= 992) {
+      card.style.width = `calc(50% - 10px)`;
+    } else {
+      card.style.width = `calc(33.33% - 10px)`;
+    }
+
+    const newCardWidth = card.offsetWidth;
+    const newCardHeight = newCardWidth * ratio;
+    card.style.height = `${newCardHeight}px`;
+  });
+};
+
+window.addEventListener('resize', resizeCards);
+resizeCards();
+
+      </script>
+      
+      <br>
     <section class="video">
         <h2>DOMO</h2>
         <video id='myVideo' controls width="500">
