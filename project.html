@@ -8,192 +8,385 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Cards</title>
     <link rel="stylesheet" href="project.css">
-</head>
-<div class="navbar">
-    <div class="container">
-        <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
-
-        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-
-        <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-            
-            <ul class="primary-nav">
-
-            </ul>
-
-            <ul class="secondary-nav">
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="project.html">Buy</a></li>
-                <li><a href="indexlogin.html">Sell</a></li>
-                <li><a href="D_blog_grid.html">Blogs</a></li>
-                <li><a href="D_projects.html">Projects</a></li>
-                <li><a href="D_about_us.html">About Us</a></li>
-                <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
-            </ul>
-        </nav>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+    
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+    
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+    
+                </ul>
+    
+                <ul class="secondary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="project.html">Buy</a></li>
+                    <li><a href="indexlogin.html">Sell</a></li>
+                    <li><a href="D_blog_grid.html">Blogs</a></li>
+                    <li><a href="D_projects.html">Projects</a></li>
+                    <li><a href="D_about_us.html">About Us</a></li>
+                    <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-
+    </head>
 <body>
-    <div class="search-container">
-        <!-- <strong><i class="fa-solid fa-magnifying-glass"></i> Search</strong> -->
-        <form class="search-box" method="GET" action="/search">
-      
-            <!--city-->
-            <select name="city" id="city">
-                <!-- (the django code) {% for city in city%}
-                    <option value="{{city.city}}">{{city.city}}</option>
-                {% endfor %} -->
-                <option>Sion</option>
-                <option>Thane</option>
-                <option>Worli</option>
-                <option>Seawoods</option>
-            </select>
+    <article class="article">
+        <section class="section hero" aria-label="hero">
+            <class class="contain">
 
-            <select name="buy_rent" id="buy_rent">
-                <option>Buy</option>
-                <option>Rent</option>
+    <form action="" class="hero-form">
+        <div class="input-wrapper">
+            <label for="search" class="input-label">Search: *</label>
+            <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="category" class="input-label">Select Categories</label>
+            <select name="category" id="category" class="dropdown-list">
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="offices">Offices</option>
+                <option value="townhome">Townhome</option>
             </select>
-      
-            <select name="category" id="category">
-                <!-- (the django code) {% for category in category%}
-                    <option value="{{category.id}}">{{category.name}}</option>
-                {% endfor %} -->
-                <option>1 Bhk</option>
-                <option>2 Bhk</option>
-                <option>3 Bhk</option>
-                <option>4 Bhk</option>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="min-price" class="input-label">Min Price :</label>
+            <select name="min-price" id="min-price" class="dropdown-list">
+                <option value="min price">Min Price</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="3000">3000</option>
+                <option value="4000">4000</option>
+                <option value="5000">5000</option>
+                <option value="6000">6000</option>
             </select>
-            <!-- <input  type="number" name="minprice" placeholder="Min Price"/>
-            <input  type="number" name="maxprice" placeholder="Max Price"/>
-            <input type="submit" value="Search"> -->
-            <select name="price" id="price">
-                <option>2 - 3 lac</option>
-                <option>3 - 4 lac</option>
-                <option>5 - 6 lac</option>
-                <option>6 - 7 lac</option>
-                <option>7 - 8 lac</option>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="max-price" class="input-label">Max Price :</label>
+            <select name="max-price" id="max-price" class="dropdown-list">
+                <option value="max price">Max Price</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="3000">3000</option>
+                <option value="4000">4000</option>
+                <option value="5000">5000</option>
+                <option value="6000">6000</option>
             </select>
-            <input type="submit" value="Search">
-        </form>
+        </div>
+        <button type="submit" class="btn btn-primary">Search now</button>
+    </form>
     </div>
-    <script src="" async defer></script>
+    </class>
+    </section>
+</article>
+ <!--=========== PROPERTIES ===========-->
+            <section class="section property" id="property" aria-label="property">
+                
+                    <ul class="property-list">
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">75 Manor Way, Great Missenden, UK</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
 
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
 
-    <div class="article-contener">
-        <ul class="groups">
-            <li>
-                <div class="card">
-                    <div class="image-session">
-                        <span class="image" style="background-image: url('images/n1.jpg');"></span>
-                    </div>
-                    <div class="meta-sission">
-                        <div class="head">
-                           <h2> Grill Villa</h2>
-                            <span class="flexone"></span>
-                            <span class="per">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
 
-                              <h2>  <span>Banglore</span><span>1 Bhk</span></h2>
-                            </span>
-                        </div>
-                        <div class="body">
-                            <p class="title"><b>price:</b> $1234k</p>
-                            <p class="title"><b>contact no:</b> 1234567891</p>
-                            <p class="desc"><b>Desc:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ex
-                                corporis nisi dignissimos quam debitis enim repellat cum explicabo consequatur.</p>
-                        </div>
-                        <div class="footer">
-                            <div class="views">
-                                <span>230k</span>
-                                <span>views</span>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="button">For Rent</a>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">12 Bootham Cresent, Ridgeway, UK</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$4000</span>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">49 Consett Rd, Hilton, UK</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$5000</span>
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">5 Helland Bridge, Upper Boat, UK</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">53 Main St, Acharacle, UK</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">10 Southlands Road, United Kingdom</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">4 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-            <div class="article-contener">
-                <ul class="groups">
-                    <li>
-                        <div class="card">
-                            <div class="image-session">
-                                <span class="image" style="background-image: url('images/n1.jpg');"></span>
-                            </div>
-                            <div class="meta-sission">
-                                <div class="head">
-                                   <h2> Grill Villa</h2>
-                                    <span class="flexone"></span>
-                                    <span class="per">
-                                        <h2><span> Mumbai</span><span>2 Bhk</span></h2>
-                                    </span>
-                                </div>
-                                <div class="body">
-                                    <p class="title"><b>price:</b> $1234k</p>
-                                    <p class="title"><b>contact no:</b> 1234567891</p>
-                                    <p class="desc"><b>Desc:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ex
-                                        corporis nisi dignissimos quam debitis enim repellat cum explicabo consequatur.</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="views">
-                                        <span>230k</span>
-                                        <span>views</span>
-                                    </div>
-                                    <a href="#" class="button">For Buy</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <div class="article-contener">
-                        <ul class="groups">
-                            <li>
-                                <div class="card">
-                                    <div class="image-session">
-                                        <span class="image" style="background-image: url('images/n1.jpg');"></span>
-                                    </div>
-                                    <div class="meta-sission">
-                                        <div class="head">
-                                           <h2> Grill Villa</h2>
-                                            <span class="flexone"></span>
-                                            <span class="per">
-                                            
-                                               <h2> <span>Chennai</span><span>3 Bhk</span></h2>
-                                            </span>
-                                        </div>
-                                        <div class="body">
-                                            <p class="title"><b>price:</b> $1234k</p>
-                                            <p class="title"><b>contact no:</b> 1234567891</p>
-                                            <p class="desc"><b>Desc:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ex
-                                                corporis nisi dignissimos quam debitis enim repellat cum explicabo consequatur.</p>
-                                        </div>
-                                        <div class="footer">
-                                            <div class="views">
-                                                <span>230k</span>
-                                                <span>views</span>
-                                            </div>
-                                            <a href="#" class="button">For Buy</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <script>
-                                const mobileBtn = document.getElementById('mobile-cta')
-                                      nav = document.querySelector('nav')
-                                      mobileBtnExit = document.getElementById('mobile-exit');
-                        
-                                mobileBtn.addEventListener('click', () => {
-                                    nav.classList.add('menu-btn');
-                                })
-                        
-                                mobileBtnExit.addEventListener('click', () => {
-                                    nav.classList.remove('menu-btn');
-                                })
-                            </script>
+            </section>
 
-                            <footer class="footer-distributed">
+
+            <!--=========== BACK-TO-TOP ==========-->
+            <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+            </a>
+        </article>
+   </main>
+    
+  <!--========= custom js link =========-->
+  <script src="js/main.js" defer></script>
+
+  <!--=========== ionicon link ==========-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<footer class="footer-distributed">
     
                                 <div class="footer-left">
                     
