@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domo Real Estate</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="navbar">
         <div class="container">
             <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
-
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
             <nav>
+                
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
@@ -21,10 +22,13 @@
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="project.html">Buy</a></li>
-                    <li><a href="indexlogin.html">Sell</a></li>
+                    <li class="current"><a href="indexlogin.html">Sell</a></li>
                     <li><a href="D_blog_grid.html">Blogs</a></li>
+
+                </ul>
+                <ul class="tertiary-nav">
                     <li><a href="D_projects.html">Projects</a></li>
                     <li><a href="D_about_us.html">About Us</a></li>
                     <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
@@ -32,6 +36,19 @@
             </nav>
         </div>
     </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 
     <section class="hero">
         <div class="container">
@@ -250,19 +267,7 @@ resizeCards();
                 </div>
     
             </footer>
-    <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
 
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    </script>
     <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
     <script src="scripts.js"></script>
     <script>

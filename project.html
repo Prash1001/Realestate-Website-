@@ -7,25 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Cards</title>
+    <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="homeverse-master/assets/css/style.css">
     <link rel="stylesheet" href="project.css">
+
+    </head>
+<body>
     <div class="navbar">
         <div class="container">
             <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
-    
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-    
+           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
             <nav>
+                
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
-    
+
                 </ul>
-    
+
                 <ul class="secondary-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="project.html">Buy</a></li>
-                    <li><a href="indexlogin.html">Sell</a></li>
+                    <li><a href="project.html">Buy</a></li>
+                    <li class="current"><a href="sell.html">Sell</a></li>
                     <li><a href="D_blog_grid.html">Blogs</a></li>
+
+                </ul>
+                <ul class="tertiary-nav">
                     <li><a href="D_projects.html">Projects</a></li>
                     <li><a href="D_about_us.html">About Us</a></li>
                     <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
@@ -33,343 +41,259 @@
             </nav>
         </div>
     </div>
-    </head>
-<body>
-    <article class="article">
-        <section class="section hero" aria-label="hero">
-            <class class="contain">
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
 
-    <form action="" class="hero-form">
-        <div class="input-wrapper">
-            <label for="search" class="input-label">Search: *</label>
-            <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
-            <ion-icon name="search-outline"></ion-icon>
-        </div>
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
 
-        <div class="input-wrapper">
-            <label for="category" class="input-label">Select Categories</label>
-            <select name="category" id="category" class="dropdown-list">
-                <option value="house">House</option>
-                <option value="apartment">Apartment</option>
-                <option value="offices">Offices</option>
-                <option value="townhome">Townhome</option>
-            </select>
-        </div>
-
-        <div class="input-wrapper">
-            <label for="min-price" class="input-label">Min Price :</label>
-            <select name="min-price" id="min-price" class="dropdown-list">
-                <option value="min price">Min Price</option>
-                <option value="500">500</option>
-                <option value="1000">1000</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="4000">4000</option>
-                <option value="5000">5000</option>
-                <option value="6000">6000</option>
-            </select>
-        </div>
-
-        <div class="input-wrapper">
-            <label for="max-price" class="input-label">Max Price :</label>
-            <select name="max-price" id="max-price" class="dropdown-list">
-                <option value="max price">Max Price</option>
-                <option value="500">500</option>
-                <option value="1000">1000</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="4000">4000</option>
-                <option value="5000">5000</option>
-                <option value="6000">6000</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Search now</button>
-    </form>
-    </div>
-    </class>
-    </section>
-</article>
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+  
  <!--=========== PROPERTIES ===========-->
-            <section class="section property" id="property" aria-label="property">
+ <section class="property" id="property">
+    <div class="container">
+
+      <ul class="property-list has-scrollbar">
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="homeverse-master/assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+              </a>
+
+              <div class="card-badge green">For Rent</div>
+
+              
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">New Apartment Nice View</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <ion-icon name="bed-outline"></ion-icon>
+
+                  <span>BHK</span>
+                </li>
+
+               
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <ion-icon name="square-outline"></ion-icon>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          
+
+          </div>
+        </li>
+
+        <li>
+          <div class="property-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="homeverse-master/assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+              </a>
+
+              <div class="card-badge orange">For Sales</div>
+
+             
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">Modern Apartments</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <ion-icon name="bed-outline"></ion-icon>
+
+                  <span>BHK</span>
+                </li>
+
                 
-                    <ul class="property-list">
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">75 Manor Way, Great Missenden, UK</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
 
-                                            <span class="item-text">7500sqf</span>
-                                        </li>
+                <li class="card-item">
+                  <strong>3450</strong>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Beds</span>
-                                        </li>
+                  <ion-icon name="square-outline"></ion-icon>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">2 Baths</span>
-                                        </li>
-                                    </ul>
+                  <span>Square Ft</span>
+                </li>
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$3500</span>
-                                        </div>
+              </ul>
 
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+            </div>
 
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">12 Bootham Cresent, Ridgeway, UK</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
+            
 
-                                            <span class="item-text">8000sqf</span>
-                                        </li>
+          </div>
+        </li>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Beds</span>
-                                        </li>
+        <li>
+          <div class="property-card">
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">2 Baths</span>
-                                        </li>
-                                    </ul>
+            <figure class="card-banner">
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$4000</span>
-                                        </div>
+              <a href="#">
+                <img src="homeverse-master/assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+              </a>
 
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+              <div class="card-badge green">For Rent</div>
 
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">49 Consett Rd, Hilton, UK</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
+             
 
-                                            <span class="item-text">8000sqf</span>
-                                        </li>
+            </figure>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Beds</span>
-                                        </li>
+            <div class="card-content">
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Baths</span>
-                                        </li>
-                                    </ul>
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$5000</span>
-                                        </div>
+              <h3 class="h3 card-title">
+                <a href="#">Comfortable Apartment</a>
+              </h3>
 
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
 
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">5 Helland Bridge, Upper Boat, UK</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
+              <ul class="card-list">
 
-                                            <span class="item-text">7500sqf</span>
-                                        </li>
+                <li class="card-item">
+                  <strong>3</strong>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Beds</span>
-                                        </li>
+                  <ion-icon name="bed-outline"></ion-icon>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">2 Baths</span>
-                                        </li>
-                                    </ul>
+                  <span>BHK</span>
+                </li>
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$3500</span>
-                                        </div>
+               
+                <li class="card-item">
+                  <strong>3450</strong>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                  <ion-icon name="square-outline"></ion-icon>
 
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">53 Main St, Acharacle, UK</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
+                  <span>Square Ft</span>
+                </li>
 
-                                            <span class="item-text">7500sqf</span>
-                                        </li>
+              </ul>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Beds</span>
-                                        </li>
+            </div>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">2 Baths</span>
-                                        </li>
-                                    </ul>
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$3500</span>
-                                        </div>
 
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+          </div>
+        </li>
 
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                                    <img src="images/Build One.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
-                                </figure>
-                                
-                                <div class="card-content">
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">10 Southlands Road, United Kingdom</a>
-                                    </h3>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="cube-outline"></ion-icon>
-                                            </div>
+        <li>
+          <div class="property-card">
 
-                                            <span class="item-text">8000sqf</span>
-                                        </li>
+            <figure class="card-banner">
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="bed-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">4 Beds</span>
-                                        </li>
+              <a href="#">
+                <img src="homeverse-master/assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
+              </a>
 
-                                        <li class="card-item">
-                                            <div class="item-icon">
-                                                <ion-icon name="man-outline"></ion-icon>
-                                            </div>
-                                            <span class="item-text">3 Baths</span>
-                                        </li>
-                                    </ul>
+              <div class="card-badge green">For Rent</div>
 
-                                    <div class="card-meta">
-                                        <div>
-                                            <span class="meta-title">Price</span>
-                                            <span class="meta-text">$3500</span>
-                                        </div>
+              
+            </figure>
 
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <div class="card-content">
+
+              <div class="card-price">
+                <strong>$34,900</strong>/Month
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="#">Luxury villa in Rego Park</a>
+              </h3>
+
+              <p class="card-text">
+                Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+              </p>
+
+              <ul class="card-list">
+
+                <li class="card-item">
+                  <strong>3</strong>
+
+                  <ion-icon name="bed-outline"></ion-icon>
+
+                  <span>BHK</span>
+                </li>
+
+               
+
+                <li class="card-item">
+                  <strong>3450</strong>
+
+                  <ion-icon name="square-outline"></ion-icon>
+
+                  <span>Square Ft</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+      
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
 
 
             <!--=========== BACK-TO-TOP ==========-->

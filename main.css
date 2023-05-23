@@ -96,7 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Add this line */
-  padding-top: 10px; /* Adjust this value as needed */
+  padding-top: 7px; /* Adjust this value as needed */
 }
 
 .navbar .mobile-menu {

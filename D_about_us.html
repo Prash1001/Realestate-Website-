@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="D_about_us.css">
+    <link rel="stylesheet" href="nav.css">
+
     <title>About Us</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
 
 </head>
 <body>
     <div class="navbar">
-        <div class="container1">
-            <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
-  
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-  
+        <div class="container">
+            <a class="logo1" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
             <nav>
+                
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
-  
+
                 </ul>
-  
+
                 <ul class="secondary-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="project.html">Buy</a></li>
-                    <li class="current"><a href="indexlogin.html">Sell</a></li>
+                    <li class="current"><a href="sell.html">Sell</a></li>
                     <li><a href="D_blog_grid.html">Blogs</a></li>
+
+                </ul>
+                <ul class="tertiary-nav">
                     <li><a href="D_projects.html">Projects</a></li>
                     <li><a href="D_about_us.html">About Us</a></li>
                     <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
@@ -35,9 +40,19 @@
             </nav>
         </div>
     </div>
-    <h1>About Us</h1>
-    <p>Here at Real Estate, we are dedicated to helping you find your dream home.</p>
-</div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 
 <div class="container">
     <div class="card">
@@ -153,19 +168,7 @@
     </div>
 </div>
 </footer>
-<script>
-const mobileBtn = document.getElementById('mobile-cta')
-  nav = document.querySelector('nav')
-  mobileBtnExit = document.getElementById('mobile-exit');
 
-mobileBtn.addEventListener('click', () => {
-nav.classList.add('menu-btn');
-})
-
-mobileBtnExit.addEventListener('click', () => {
-nav.classList.remove('menu-btn');
-})
-</script>
 <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
 
 </body>
