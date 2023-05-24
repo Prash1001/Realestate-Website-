@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>View Property</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="property.css">
+
+
+</head>
+<body>
+   <div class="navbar">
+      <div class="container">
+          <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+         <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+          <nav>
+              
+              <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+              
+              <ul class="primary-nav">
+
+              </ul>
+
+              <ul class="secondary-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="project.html">Buy</a></li>
+                  <li class="current"><a href="sell.html">Sell</a></li>
+                  <li><a href="D_blog_grid.html">Blogs</a></li>
+
+              </ul>
+              <ul class="tertiary-nav">
+                  <li><a href="D_projects.html">Projects</a></li>
+                  <li><a href="D_about_us.html">About Us</a></li>
+                  <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <script>
+      const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+      mobileBtn.addEventListener('click', () => {
+          nav.classList.add('menu-btn');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+          nav.classList.remove('menu-btn');
+      })
+  </script>
+   
+<!-- Include user header component -->
+<!-- <?php include 'components/user_header.php'; ?> -->
+
+<!-- view property section starts  -->
+
+<section class="view-property">
+
+
+   <!-- PHP code starts -->
+   <!-- <?php
+      // PHP code here
+   ?> -->
+   <!-- PHP code ends -->
+
+   <div class="details">
+     <div class="swiper images-container">
+         <div class="swiper-wrapper">
+            <img src="images/buildings.jpg" alt="" class="swiper-slide">
+            <!-- <?php if(!empty()){ ?> -->
+            <img src="images/buildings2.jpg" alt="" class="swiper-slide">
+            <!-- <?php } ?> -->
+            <!-- <?php if(!empty()){ ?> -->
+            <img src="images/n1.jpg" alt="" class="swiper-slide">
+            <!-- <?php } ?> -->
+            <!-- <?php if(!empty()){ ?> -->
+            <img src="images/n2.jpeg" alt="" class="swiper-slide">
+            <!-- <?php } ?> -->
+            <!-- <?php if(!empty()){ ?> -->
+            <img src="images/n3.jpeg" alt="" class="swiper-slide">
+            <!-- <?php } ?> -->
+         </div>
+         <div class="swiper-pagination"></div>
+     </div>
+      <h3 class="name"></h3>
+      <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai</span></p>
+      <div class="info">
+         <p><i class="fas fa-indian-rupee-sign"></i><span>11111111</span></p>
+         <p><i class="fas fa-user"></i><span>asdfgsdfgh</span></p>
+         <p><i class="fas fa-phone"></i><span>1234567891</span></p>
+         <p><i class="fas fa-building"></i><span>lotus park</span></p>
+         <p><i class="fas fa-house"></i><span>3bhk</span></p>
+         <p><i class="fas fa-calendar"></i><span>3 years</span></p>
+      </div>
+      <h3 class="title">Details</h3>
+      <div class="flex">
+         <div class="box">
+            <p><i>rooms : </i><span>3bhk</span></p>
+            <p><i>deposit amount :</i><span><span class="fas fa-indian-rupee-sign" style="margin-right: .5rem;"></span> 50000</span></p>
+            <p><i>status :</i><span>fghjjm</span></p>
+            <p><i>bedroom :</i><span>2</span></p>
+            <p><i>bathroom :</i><span>3</span></p>
+            <p><i>balcony :</i><span>2</span></p>
+         </div>
+         <div class="box">
+            <p><i>carpet area :</i><span>45 sqft</span></p>
+            <p><i>age :</i><span>34 years</span></p>
+            <p><i>total floors :</i><span>6</span></p>
+            <p><i>room floor :</i><span>2</span></p>
+            <p><i>furnished :</i><span>new</span></p>
+            <p><i>loan :</i><span>23455</span></p>
+         </div>
+      </div>
+      <h3 class="title">Amenities</h3>
+      <div class="flex">
+         <div class="box">
+            <p><i class="fas fa-"></i><span>Lifts</span></p>
+            <p><i class="fas fa-"></i><span>Security guards</span></p>
+            <p><i class="fas fa-"></i><span>Play ground</span></p>
+            <p><i class="fas fa-"></i><span>Gardens</span></p>
+            <p><i class="fas fa-"></i><span>Water supply</span></p>
+            <p><i class="fas fa-"></i><span>Power backup</span></p>
+         </div>
+         <div class="box">
+            <p><i class="fas fa-"></i><span>Parking area</span></p>
+            <p><i class="fas fa-"></i><span>Gym</span></p>
+            <p><i class="fas fa-"></i><span>Shopping mall</span></p>
+            <p><i class="fas fa-"></i><span>Hospital</span></p>
+            <p><i class="fas fa-"></i><span>Schools</span></p>
+            <p><i class="fas fa-"></i><span>Market area</span></p>
+         </div>
+      </div>
+      <h3 class="title">Description</h3>
+      <p class="description">asdfghjkll;fdssasghj</p>
+      <form action="" method="post" class="flex-btn">
+         <input type="hidden" name="property_id" value="">
+         <!-- <?php if($select_saved->rowCount() > 0){ ?> -->
+         
+         <!-- <?php }else{ ?> -->
+            <button type="submit" name="save" class="save"><i class="fas fa-phone"></i><span>Send Enquiry</span></button>
+         <!-- <?php } ?> -->
+        
+          
+      </form>
+   </div>
+ 
+
+   <!-- <?php }else{ ?> -->
+   <!--<p class="empty">property not found! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>
+   !-- <?php } ?> -->
+
+</section>
+
+<!-- view property section ends -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- Include footer component -->
+<!-- <?php include 'components/footer.php'; ?> -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- Include message component -->
+<!-- <?php include 'components/message.php'; ?> -->
+
+<script>
+var swiper = new Swiper(".images-container", {
+   effect: "coverflow",
+   grabCursor: true,
+   centeredSlides: true,
+   slidesPerView: "auto",
+   loop: true,
+   coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: 3,
+      slideShadows: true,
+   },
+   pagination: {
+      el: ".swiper-pagination",
+   },
+});
+</script>
+
+</body>
+</html>

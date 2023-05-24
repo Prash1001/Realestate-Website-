@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="D_Contact_us.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="front-end real-estate website/desgin/css/style.css">
@@ -16,32 +15,48 @@
 
 </head>
 <body>
-  <div class="navbar">
-    <div class="container">
-        <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+            <nav>
+                
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
 
-        <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-            
-            <ul class="primary-nav">
+                </ul>
 
-            </ul>
+                <ul class="secondary-nav">
+                    <li class="current"><a href="home.css">Home</a></li>
+                    <li><a href="rent.html">Buy</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="D_blog_grid.html">Blogs</a></li>
 
-            <ul class="secondary-nav" style="font-size:medium;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Buy</a></li>
-                <li class="current"><a href="indexlogin.html">Sell</a></li>
-                <li><a href="D_blog_grid.html">Blogs</a></li>
-                <li><a href="D_projects.html">Projects</a></li>
-                <li><a href="D_about_us.html">About Us</a></li>
-                <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
-            </ul>
-        </nav>
+                </ul>
+                <ul class="tertiary-nav">
+                    <li><a href="D_projects.html">Projects</a></li>
+                    <li><a href="D_about_us.html">About Us</a></li>
+                    <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
 
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 <section class="contact">
 
   <div class="row">
@@ -63,23 +78,7 @@
 
 
 
-<script>
 
-  const mobileBtn = document.getElementById('mobile-cta')
-        nav = document.querySelector('nav')
-        mobileBtnExit = document.getElementById('mobile-exit');
-
-  mobileBtn.addEventListener('click', () => {
-      nav.classList.add('menu-btn');
-  })
-
-  mobileBtnExit.addEventListener('click', () => {
-      nav.classList.remove('menu-btn');
-  })
-
-
-
-</script>
 <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
 <footer class="footer-distributed">
     

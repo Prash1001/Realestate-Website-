@@ -34,7 +34,8 @@ box-sizing: border-box;
     box-shadow: 0 0 0.8em #26489a;
 }
 .select:hover{
-    background:#323741;
+    background: royalblue;
+    text-decoration-color: black;
 
 }
 .caret{

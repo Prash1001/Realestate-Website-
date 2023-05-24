@@ -19,26 +19,12 @@ body {
   background: white;
   padding: 0.5em;
 }
-.navbar .logo {
-  display: inline-block;
-  height: 50px;
-}
 
-.navbar .logo img {
-  height: 100%;
-}
+
+
 
 /* Other styles for the navigation and mobile menu icons go here */
 
-.navbar nav {
-  display: none;
-}
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Add this line */
-  padding-top: 10px; /* Adjust this value as needed */
-}
 
 .navbar .mobile-menu {
   cursor: pointer;
@@ -58,87 +44,17 @@ section {
   padding: 5em 2em;
 }
 
-nav {
-  position: fixed;
-  z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
-  background: #20272E;
-  height: 100vh;
-  padding: 1em;
-}
-nav ul.primary-nav {
-  margin-top: 5em;
-}
-nav li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em;
-  font-size: 1.3em;
-  text-align: right;
-}
-nav li a:hover {
-  font-weight: bold;
+.navbar{
+  font-size: larger;
+  
 }
 
-.mobile-menu-exit {
-  float: right;
-  margin: 0.5em;
-  cursor: pointer;
+.navbar .container{
+  padding-top: 1px; /* Adjust this value as needed */
+  /* Adjust this value as needed */
+  padding-bottom: 10px;
+
 }
-
-@media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
-    display: none;
-  }
-  .navbar .container {
-    display: grid;
-    grid-template-columns: 180px auto;
-    justify-content: unset;
-  }
-  .navbar nav {
-    display: flex;
-    justify-content: space-between;
-    background: none;
-    position: unset;
-    height: auto;
-    width: 100%;
-    padding: 0;
-  }
-  .navbar nav ul {
-    display: flex;
-  }
-  .navbar nav a {
-    color: black;
-    font-size: 1em;
-    padding: 0.1em 1em;
-  }
-  .navbar nav ul.primary-nav {
-    margin: 0;
-  }
-  .navbar nav li.current a {
-    font-weight: bold;
-  }
-  .navbar nav li.go-premium-cta a {
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
-    font-weight: bold;
-    border-radius: 5em;
-    margin-top: -0.2em;
-  }
-  .navbar nav li.go-premium-cta a:hover {
-    background: var(--primary-color);
-    color: white;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  .container {
-
-    margin: 0 auto;
-  }}
-
 /*footer*/
 .footer-distributed{
 	background: #050144;
