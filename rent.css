@@ -1,5 +1,6 @@
 .card-section {
     padding: 0 20px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,7 +61,7 @@
   
   @media (max-width: 767px) {
     .card {
-      width: calc(50% - 20px);
+      width: calc(100%);
     }
   }
 
