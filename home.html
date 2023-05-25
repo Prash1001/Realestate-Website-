@@ -7,12 +7,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="home.css">
+    
 
 </head>
 <body>
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="index.html"><img src="images/domologo.png" alt="DoMo"></a>
+            <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
             <nav>
@@ -25,8 +26,8 @@
 
                 <ul class="secondary-nav">
                     <li class="current"><a href="home.html">Home</a></li>
-                    <li><a href="project.html">Buy</a></li>
-                    <li><a href="indexlogin.html">Sell</a></li>
+                    <li><a href="trycard.html">Buy</a></li>
+                    <li><a href="sell.html">Sell</a></li>
                     <li><a href="D_blog_grid.html">Blogs</a></li>
 
                 </ul>
@@ -87,6 +88,54 @@
           </a>
         </div>
       </section>
+
+	  <section class="testimonialsec">
+		<h2>Why you should choose DOMO</h2>
+		<div class="testimonial-section">
+		  <div class="slider-container">
+			<div class="testimonial-slider">
+			  <div class="testimonial-card">
+				<div class="testimonial-photo">
+				  <img src="images/2.jpg" alt="Sample Image">
+				</div>
+				<h3 class="testimonial-name">John Doe</h3>
+				<p class="testimonial-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae commodo libero.</p>
+			  </div>
+			  <div class="testimonial-card">
+				<div class="testimonial-photo">
+				  <img src="images/2.jpg" alt="Sample Image">
+				</div>
+				<h3 class="testimonial-name">Jane Smith</h3>
+				<p class="testimonial-paragraph">Praesent in purus mauris. Sed ac velit justo. Ut non bibendum magna.</p>
+			  </div>
+			  <div class="testimonial-card">
+				  <div class="testimonial-photo">
+					<img src="images/2.jpg" alt="Sample Image">
+				  </div>
+				  <h3 class="testimonial-name">Jane Smith</h3>
+				  <p class="testimonial-paragraph">Praesent in purus mauris. Sed ac velit justo. Ut non bibendum magna.</p>
+				</div>
+			  <div class="testimonial-card">
+				<div class="testimonial-photo">
+				  <img src="images/2.jpg" alt="Sample Image">
+				</div>
+				<h3 class="testimonial-name">Mike Johnson</h3>
+				<p class="testimonial-paragraph">Aenean vulputate feugiat mi. Mauris lobortis ex vel lacus malesuada, vel finibus lacus sollicitudin.</p>
+			  </div>
+			  <!-- Add more testimonial cards here -->
+			</div>
+		  </div>
+		  <div class="slider-controls">
+			<div class="slider-control prev-button">
+			  <i class="fas fa-chevron-left"></i>
+			</div>
+			<div class="slider-control next-button">
+			  <i class="fas fa-chevron-right"></i>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
       <section class="section2">
         <div class="card-section2">
           <div class="card2">
@@ -119,7 +168,75 @@
           </div>
         </div>
       </section>
-      
+
+
+      <footer class="footer-distributed">
+    
+        <div class="footer-left">
+
+            <a class="logofooter" href="#"><img src="images/domologo.png" alt="DoMofooter"></a>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">Rental</a>
+            
+                <a href="#">Corporate</a>
+            
+                <a href="#">Blogs</a>
+                
+                <a href="#">About Us</a>
+                
+                <a href="#">Contact Us</a>
+            </p>
+
+            <p class="footer-company-name">Company Name © 2015</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Kamala Mills</span> Sion, Mumbai</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9896985327</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@domo.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+               Market leaders in rentals, leasing and out-right buying.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+	  
+	  
+	  
+
+      <a href="https:/wa.me/"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
       
       
     <script>
@@ -136,6 +253,51 @@
         })
     </script>
     <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const testimonialSlider = document.querySelector(".testimonial-slider");
+			const prevButton = document.querySelector(".prev-button");
+			const nextButton = document.querySelector(".next-button");
+			const cardWidth = 450; // Width of each testimonial card including padding
+		  
+			let currentIndex = 0;
+			const cardCount = testimonialSlider.childElementCount;
+			const maxVisibleCards = 3;
+			const maxIndex = Math.max(0, cardCount - maxVisibleCards);
+		  
+			prevButton.addEventListener("click", function() {
+			  currentIndex = Math.max(0, currentIndex - 1);
+			  const translateX = -currentIndex * cardWidth;
+			  testimonialSlider.style.transform = `translateX(${translateX}px)`;
+			});
+		  
+			nextButton.addEventListener("click", function() {
+			  currentIndex = Math.min(maxIndex, currentIndex + 1);
+			  const translateX = -currentIndex * cardWidth;
+			  testimonialSlider.style.transform = `translateX(${translateX}px)`;
+			});
+		  
+			// Function to handle left icon button click
+			function moveSliderToLeft() {
+			  currentIndex = Math.max(0, currentIndex - 1);
+			  const translateX = -currentIndex * cardWidth;
+			  testimonialSlider.style.transform = `translateX(${translateX}px)`;
+			}
+		  
+			// Function to handle right icon button click
+			function moveSliderToRight() {
+			  currentIndex = Math.min(maxIndex, currentIndex + 1);
+			  const translateX = -currentIndex * cardWidth;
+			  testimonialSlider.style.transform = `translateX(${translateX}px)`;
+			}
+		  
+			// Attach event listeners to left and right icon buttons
+			prevButton.addEventListener("click", moveSliderToLeft);
+			nextButton.addEventListener("click", moveSliderToRight);
+		  });
+		  
+	</script>
     
 </body>
 </html>

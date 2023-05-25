@@ -1,24 +1,29 @@
 .newnew{
     background-color: white;
     font-family: calibri;
-    
+    border: 2px lightblue solid;
+    box-shadow: 0.25em 0.05em 0.05em 0.05em rgb(207, 231, 239);
+
+
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 .dropdown{
-    min-width: 10em;
+    min-width: 9em;
     position: relative;
-    margin: 2em;
+    margin: 1em;
 }
 .dropdown *{
 box-sizing: border-box;
 }
 
 .select{
-    background-color: #2a2f3b ;
-    color: #fff;
+    background-color: white ;
+    font-weight:600;
+    color: black;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +39,7 @@ box-sizing: border-box;
     box-shadow: 0 0 0.8em #26489a;
 }
 .select:hover{
-    background:#323741;
+    background:lightblue;
 
 }
 .caret{
@@ -53,12 +58,12 @@ box-sizing: border-box;
     .menu{
         list-style: none;
         padding: 0.2em 0.5em;
-        background-color: #323741;
+        background-color: lightblue;
         border:1px#363a43 solid;
         border:1px #363a43 solid ;
         box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
         border-radius: 0.5em;
-        color:#9fa5b5;
+        color:black;
         position: absolute;
         top:4em;
         left:50%;
@@ -76,11 +81,11 @@ box-sizing: border-box;
     cursor: pointer;
 }
 .menu li:hover{
-    background: #2a2d35;
+    background: white;
 }
 
 .active{
-    background:#23242a;
+    background:white;
 }
 .menu-open{
     display: block;
@@ -92,6 +97,22 @@ box-sizing: border-box;
 
 
 
+.dropdown1 {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height:45px;
+
+  }
+  
+  .search-box {
+    width: 200px;
+  }
+  
+  .dropdown1 {
+    width: 60px;
+  }
+  
 
 /* Default styles */
 
@@ -110,6 +131,10 @@ box-sizing: border-box;
     .menu {
       top: 4em;
     }
+    .dropdown1 {
+        width: 110px;
+      }
+      
   }
   
   @media (max-width: 480px) {
@@ -123,6 +148,10 @@ box-sizing: border-box;
     .menu {
       top: 5em;
     }
+    .dropdown1 {
+        width: 80px;
+      }
+      
   
     /* Adjust font sizes or other styles as needed */
   }
@@ -130,8 +159,7 @@ box-sizing: border-box;
 
 
 
-
-
+ 
 
 
 
