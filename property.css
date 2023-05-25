@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 :root{
    --main-color:#2c72da;
    --light-color:#666;
@@ -13,7 +14,7 @@
 
 
 *{
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'poppins';
    margin: 0; padding: 0;
    box-sizing: border-box;
    outline: none; border: none;
@@ -35,7 +36,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--main-color);
+   background-color: white;
 }
 
 html{
@@ -105,90 +106,6 @@ section{
    align-items: flex-end;
 }
 
-.header{
-   position: sticky;
-   top: 0; left: 0; right: 0;
-   z-index: 1000;
-   box-shadow: var(--box-shodow);
-}
-
-.header .navbar.nav-1 .flex{
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-}
-
-.header .navbar.nav-2 .flex{
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-.header .navbar.nav-1{
-   background-color: var(--black);
-}
-
-.header .navbar.nav-2{
-   background-color: var(--white);
-}
-
-.header .navbar .flex{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.header .navbar .flex .logo{
-   font-size: 2.2rem;
-   color: var(--white); 
-}
-
-.header .navbar .flex .logo i{
-   color: var(--main-color);
-   margin-right: 1rem;
-}
-
-.header .navbar .flex ul{
-   list-style: none;
-}
-
-.header .navbar .flex ul li{
-   float: left;
-   position: relative;
-}
-
-.header .navbar .flex ul li a{
-   display: inline-block;
-   padding: 1.2rem 2rem;
-   font-size: 1.8rem;
-   color: var(--black);
-   background-color: var(--white);
-}
-
-.header .navbar .flex ul li a:hover{
-   background-color: var(--main-color);
-   color: var(--white);
-}
-
-.header .navbar .flex ul li a i{
-   margin-left: 1rem;
-}
-
-.header .navbar .flex ul li ul{
-   position: absolute;
-   width: 17rem;
-   left: 0;
-}
-
-.header .navbar .flex ul li ul li{
-   width: 100%;
-}
-
-.header .navbar .flex ul li ul li a{
-   display: none;
-}
-
-.header .navbar .flex ul li:hover ul li a{
-   display: block;
-}
 
 #menu-btn{
    font-size: 2.5rem;
@@ -434,10 +351,6 @@ section{
       font-size: 50%;
    }
 
-   .header .navbar .flex .logo{
-      font-size: 1.8rem;
-   }
-
    .home .center form .flex{
       gap: 0;
    }
@@ -474,14 +387,13 @@ section{
 
 }
 
-/*header*/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
 :root {
     --primary-color: #007AF3;
   }
-  body {
+.navbar {
     margin: 0;
     font-family: "Poppins";
   }
@@ -490,9 +402,9 @@ section{
     background: white;
     padding: 0.5em;
     padding-left: 1em;
-    height: 50px;
+    height: 70px;
     align-items: center;
-    width: 100%;
+    
   }
 
   .navbar .logo {
@@ -512,12 +424,11 @@ section{
   .navbar nav {
     display: none;
   }
-  .navbar .container {
+  .navbar .container5 {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Add this line */
-    padding-top: 10px;
-    padding-bottom: 20px; /* Adjust this value as needed */
+    align-items: center; 
+    padding-top: 10px; 
   }
   
   .navbar .mobile-menu {
@@ -525,11 +436,14 @@ section{
     padding-top: 10px;
   }
   
-  a {
+
+  .navbar s
+
+  .navbar a {
     color: #444444;
   }
   
-  ul {
+  .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -548,12 +462,11 @@ section{
     background: #20272E;
     height: 100vh;
     padding: 1em;
+    
   }
-  
   nav ul.primary-nav {
     margin-top: 5em;
   }
-
   nav li a {
     color: white;
     text-decoration: none;
@@ -578,10 +491,12 @@ section{
     .mobile-menu, .mobile-menu-exit {
       display: none;
     }
-    .navbar .container {
+    .navbar .container5 {
       display: grid;
       grid-template-columns: 180px auto;
       justify-content: unset;
+
+
     }
     .navbar .logo img {
       height: 100%;
@@ -591,8 +506,8 @@ section{
       display: inline-block;
       position: absolute;
       left:48%;
-      height: 50px;
-      width: 0%;
+      height: 80px;
+      width: 20%;
       transform: translateX(-5%);
       padding-bottom: 30px;
     }
@@ -603,7 +518,7 @@ section{
       position: unset;
       height:60px ;
       width: 100%;
-      padding: 0;
+      padding: 0px;
       align-items: center;
     }
     .navbar nav ul {
@@ -612,7 +527,7 @@ section{
     }
     .navbar nav a {
       color: black;
-      font-size: 1em;
+      font-size: 1.5em;
       padding: 0.1em 1em;
     }
     .navbar .tertiary-nav {
@@ -645,7 +560,7 @@ section{
     }
   }
   @media only screen and (min-width: 1080px) {
-    .container {
+    .container5 {
       
       margin: 0 auto;
     }
