@@ -40,13 +40,13 @@
   }
   
   .card-details h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
   .card-details p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
   
@@ -261,4 +261,3 @@
 
 }
 
-  

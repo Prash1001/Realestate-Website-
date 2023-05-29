@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
     <link rel="stylesheet" href="buy.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="abc1.css">
+    <link rel="stylesheet" type="text/css" href="abcrent.css">
 </head>
 <body>
     <div class="navbar">
@@ -85,25 +86,27 @@
       <div class="caret"></div>
 </div>
 <ul class="menu">
-  <select class="dropdown1 min">
-      <option value="more">Min:</option>
-        <option value="more">100</option>
-        <option value="more">200</option>
-        <option value="more">300</option>
-        <option value="more">400</option>
-        <option value="more">500</option>
-        <!-- Add more options here -->
-       </select>
-       <select class="dropdown1 max">
-          <option value="more">Max:</option>
-            <option value="more">100</option>
-            <option value="more">200</option>
-            <option value="more">300</option>
-            <option value="more">400</option>
-            <option value="more">500</option>
-            <!-- Add more options here -->
-           </select>
-  
+  <div class="dropdown1 min">
+      <select class="min-dropdown">
+          <option value="more">Min:</option>
+          <option value="1">1 Cr</option>
+          <option value="2">2 Cr</option>
+          <option value="3">3 Cr</option>
+          <option value="4">4 Cr</option>
+          <option value="5">5 Cr</option>
+
+      </select>
+  </div>
+  <div class="dropdown1 max">
+      <select class="max-dropdown">
+          <option value="max">Max:</option>
+          <option value="1">1 Cr</option>
+          <option value="2">2 Cr</option>
+          <option value="3">3 Cr</option>
+          <option value="4">4 Cr</option>
+          <option value="5">5 Cr</option>
+      </select>
+  </div>
 </ul>
 </div>
 <div class="dropdown">
@@ -276,7 +279,7 @@
             nav.classList.remove('menu-btn');
         })
     </script>
-    <script src="abc1.js"></script>  
+    <script src="abcrent.js"></script>  
       
 </body>
 </html>
