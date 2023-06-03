@@ -362,20 +362,22 @@ textarea.input {
 :root {
     --primary-color: #007AF3;
   }
-  body {
+  .navbar {
     margin: 0;
     font-family: "Poppins";
   }
   
   .navbar {
-    background-color: white;
-    height: 50px;
+    background: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    height: 70px;
     align-items: center;
   }
 
   .navbar .logo {
     display: inline-block;
-    height: 50px;
+    height: 45px;
     width: 100%;
   }
 
@@ -402,6 +404,9 @@ textarea.input {
     padding-top: 10px;
   }
   
+
+  s
+
   a {
     color: #444444;
   }
@@ -425,16 +430,15 @@ textarea.input {
     background: #20272E;
     height: 100vh;
     padding: 1em;
+    
   }
-
   nav ul.primary-nav {
     margin-top: 5em;
   }
-
   nav li a {
     color: white;
     text-decoration: none;
-    display: flex;
+    display: block;
     padding: 0.5em;
     font-size: 1.3em;
     text-align: center;
@@ -459,6 +463,8 @@ textarea.input {
       display: grid;
       grid-template-columns: 180px auto;
       justify-content: unset;
+
+
     }
     .navbar .logo img {
       height: 100%;
@@ -468,8 +474,8 @@ textarea.input {
       display: inline-block;
       position: absolute;
       left:48%;
-      height: 50px;
-      width: 0%;
+      height: 80px;
+      width: 20%;
       transform: translateX(-5%);
       padding-bottom: 30px;
     }
@@ -480,7 +486,7 @@ textarea.input {
       position: unset;
       height:60px ;
       width: 100%;
-      padding: 0;
+      padding: 0px;
       align-items: center;
     }
     .navbar nav ul {
@@ -530,7 +536,6 @@ textarea.input {
     .primary-cta {
       margin-right: 1em;
     }}
-
     
   .footer-distributed{
     background: #050144;
