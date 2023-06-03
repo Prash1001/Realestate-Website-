@@ -1,146 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="D_Contact_us.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="front-end real-estate website/desgin/css/style.css">
-    <!-- Fontawesome icon -->
-    <title>Contact Us</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
-
-</head>
-<body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
-           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-
-            <nav>
-                
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                
-                <ul class="primary-nav">
-
-                </ul>
-
-                <ul class="secondary-nav">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="buy.html">Buy</a></li>
-					<li><a href="rent.html">Rent</a></li>
-                    <li><a href="sell.html">Sell</a></li>
-
-                </ul>
-                <ul class="tertiary-nav">
-					<li><a href="D_blog_grid.html">Blogs</a></li>
-                    <li><a href="D_projects.html">Projects</a></li>
-                    <li><a href="D_about_us.html">About Us</a></li>
-                    <li class="go-premium-cta"  class="current"><a href="D_Contact_us.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    </script>
-<section class="contact">
-
-  <div class="row">
-     <div class="image">
-        <img src="images/contact-img.svg" alt="">
-     </div>
-     <form action="" method="post">
-        <h3>get in touch</h3>
-        <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
-        <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
-        <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="enter your number" class="box">
-        <textarea name="message" placeholder="enter your message" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
-        <input type="submit" value="send message" name="send" class="btn">
-     </form>
-  </div>
-
-</section>
-
-
-
-
-
-<script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
-<footer class="footer-distributed">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-  <div class="footer-left">
+    <title> Contact Form </title>
+    <link rel="stylesheet" href="contactus.css" />
 
-      <a class="logofooter" href="#"><img src="images/domologo1.png" alt="DoMofooter"></a>
+    <link href="Mail.ico" rel="icon" type="image/x-icon"/>
 
-      <p class="footer-links">
-          <a href="index.html" class="link-1">Home</a>
-          
-          <a href="#">Rental</a>
-      
-          <a href="#">Corporate</a>
-      
-          <a href="#">Blogs</a>
-          
-          <a href="D_about_us.html">About Us</a>
-          
-          <a href="D_Contact_us.html">Contact Us</a>
-      </p>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+  
+  <body>
+    <div class="navbar">
+      <div class="container5">
+          <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
+         <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-      <p class="footer-company-name">Company Name © 2015</p>
+          <nav>
+              
+              <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+              
+              <ul class="primary-nav">
+
+              </ul>
+
+              <ul class="secondary-nav">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="buy.html">Buy</a></li>
+               <li><a href="rent.html">Rent</a></li>
+               <li><a href="sell.html">Sell</a></li>
+
+           </ul>
+           <ul class="tertiary-nav">
+               <li><a href="D_blog_grid.html">Blogs</a></li>
+               <li><a href="D_projects.html">Projects</a></li>
+               <li><a href="D_about_us.html">About Us</a></li>
+               <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+           </ul>
+          </nav>
+      </div>
   </div>
 
-  <div class="footer-center">
+  <script>
+      const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
 
-      <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Kamala Mills</span> Sion, Mumbai</p>
+      mobileBtn.addEventListener('click', () => {
+          nav.classList.add('menu-btn');
+      })
+
+      mobileBtnExit.addEventListener('click', () => {
+          nav.classList.remove('menu-btn');
+      })
+  </script>
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contact Us</h3>
+          <p class="text">
+            If you love to Program & Develop new things as much as I do.
+            Lets talk about how to Merge & Build new Projects !!
+          </p>
+ 
+              <input type="radio" name="option" value="option1">  I am seeking to offer my home on rent<br>
+              <br>
+            
+              <input type="radio" name="option" value="option2">  I am interested in renting  a property<br>
+        
+
+          <div class="social-media">
+            <p> Connect with Me : </p>
+            <div class="social-icons">
+
+              <a href="https://github.com/Shahzaibfardeen" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/shahzaib-fardeen/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a href="https://www.instagram.com/shahzaib_fardeen/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="https://www.facebook.com/shahzaib.fardeen/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="https://twitter.com/shahzaibfardeen" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+          
+        <form action="index.html autocomplete="off">
+        <h3 class="title"> Contact Me </h3>
+          
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for=""> Name </label>
+              <span> Name </span>
+            </div>
+            
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for=""> Email </label>
+              <span> Email </span>
+            </div>
+            
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for=""> Phone </label>
+              <span> Phone </span>
+            </div>
+            
+            <div class="input-container">
+              <select id="bhk" name="bhk">
+                <option value="1">1 BHK</option>
+                <option value="2">2 BHK</option>
+                <option value="3">3 BHK</option>
+                <option value="4">4 BHK</option>
+                <!-- Add more options as needed -->
+              </select>
+
+            </div>
+            <br>
+            
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-distributed">
+    
+      <div class="footer-left">
+
+          <a class="logofooter" href="#"><img src="images/domologo.png" alt="DoMofooter"></a>
+
+          <p class="footer-links">
+              <a href="home.html" class="link-1">Home</a>
+              
+              <a href="rent.html">Buy</a>
+          
+              <a href="rent.html">Rent</a>
+          
+              <a href="sell.html">sell</a>
+              
+              <a href="D_blog_grid.html">Blogs</a>
+              
+              <a href="D_about_us.html">About Us</a>
+
+              <a href="D_Contact_us.html">Contact Us</a>
+
+          </p>
+
+          <p class="footer-company-name">Company Name © 2015</p>
       </div>
 
-      <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 9896985327</p>
-      </div>
+      <div class="footer-center">
 
-      <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@domo.com</a></p>
-      </div>
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Kamala Mills</span> Sion, Mumbai</p>
+          </div>
 
-  </div>
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>+91 9896985327</p>
+          </div>
 
-  <div class="footer-right">
-
-      <p class="footer-company-about">
-          <span>About the company</span>
-         Market leaders in rentals, leasing and out-right buying.
-      </p>
-
-      <div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">support@domo.com</a></p>
+          </div>
 
       </div>
 
-  </div>
+      <div class="footer-right">
 
-</footer>
-</body>
+          <p class="footer-company-about">
+              <span>About the company</span>
+             Market leaders in rentals, leasing and out-right buying.
+          </p>
+
+          <div class="footer-icons">
+
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+
+          </div>
+
+      </div>
+
+  </footer>
+    <script src="contactus.js"></script>
+  </body>
 </html>
