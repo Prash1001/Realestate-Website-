@@ -368,6 +368,17 @@ body {
     background-color: #555;
   }
 
+  @media only screen and (max-width: 767px) {
+    .floating-icon {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+      bottom: 70px;
+      right: 10px;
+    }
+  }
+
   .whatsapp_float {
     position: fixed;
     width: 60px;
