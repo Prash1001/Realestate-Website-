@@ -13,6 +13,7 @@ body {
 
 }
 
+
 .left-container {
     width: 100%;
     background-image: url('images/homezillow.png');
@@ -346,6 +347,25 @@ body {
         color: white;
         border: 2px solid white;
       }
+  }
+
+  .floating-icon {
+    position: fixed;
+    bottom: 110px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    z-index: 999;
+  }
+  
+  .floating-icon:hover {
+    background-color: #555;
   }
 
   .whatsapp_float {
