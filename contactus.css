@@ -199,6 +199,16 @@ textarea.input {
   top: 50%;
   transform: translateY(-50%);
 }
+  
+.card-info {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.card-info i {
+  margin-right: 5px;
+}
 
 .input-container span:before {
   left: 50%;
