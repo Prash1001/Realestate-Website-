@@ -7,7 +7,6 @@
     margin: 0;
     font-family: "Poppins";
   }
- 
   
   .navbar {
     background: white;
@@ -1016,21 +1015,21 @@ button {
 {
   font-size: 3.0em;
   padding-top: 0.5em ;
-  padding-left: 90px;
+  padding-left: 3em;
   text-align: left;
-  max-width : 700px;
+  max-width:60% ;
 }
 .left-content p
 {
-  padding-left: 90px;  
-  text-align: justify;
-  max-width:700px;
+  padding-left: 9.25em;
+  text-align: left;
+  max-width:80% ;
 }
 .left-content form 
 {
-  padding-left: 90px;
+  padding-left: 9.25em;
   text-align: left;
-  max-width:700px;
+  max-width:60% ;
 }
 
 .search-container {
@@ -1069,9 +1068,8 @@ background-color: #555;
 }
 
 .right-content img {
-  padding-right: 90px;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 70%;
+  max-width: 70%;
   text-align: right;
 }
 .agent-button {
