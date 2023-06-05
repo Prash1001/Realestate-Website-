@@ -29,11 +29,38 @@ body {
 .caption {
     font-size: 50px;
     margin-bottom: 10px;
-    color: Black;
+    color: white;
     text-align: Center;
     padding-top: 60px;
     font-family: Abril FatFace;
 }
+
+
+.caption1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  text-align: Center;
+  padding-top: 5px;
+  font-family: Abril FatFace;
+}
+.caption2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+  text-align: Center;
+  padding-top: 40px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.caption3{
+  font-size: 20px;
+  color: black;
+  text-align: Center;
+  padding-top: 5px;
+  font-family:'Times New Roman', Times, serif;
+}
+
 
 
 .search-container {
@@ -47,7 +74,7 @@ body {
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
-    padding-top: 125px;
+    padding-top: 110px;
   }
   
   .search-container input {
@@ -76,7 +103,7 @@ body {
     background-color: #555;
   }
   .card-section {
-    padding: 90px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 
