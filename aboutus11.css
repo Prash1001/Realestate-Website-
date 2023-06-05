@@ -623,7 +623,7 @@ button {
   content: '';
   width: 100px;
   height: 5px;
-  background: #62AD4C;
+  background: #003b71;
 }
 
 .about .list {
@@ -795,7 +795,7 @@ button {
 }
 
 .customer .item h1 span {
-  color: #74B661;
+  color: #003b71;
   font-size: 17px;
   font-weight: 300;
 }
@@ -803,13 +803,13 @@ button {
 .owl-nav span {
   font-size: 20px;
   padding: 5px 25px;
-  background: #74B661;
+  background: #050144;
   color: white;
   transition: 0.5s;
 }
 
 .owl-nav span:hover {
-  background: black;
+  background: #003b71;
 }
 
 /*-------------customer-------------*/
