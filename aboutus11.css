@@ -609,7 +609,7 @@ button {
   font-weight: 100;
   font-size: 15px;
   letter-spacing: 3px;
-  color: #62AD4C;
+  color: #0b1308;
   margin-top: 10px;
 }
 
@@ -623,7 +623,8 @@ button {
   content: '';
   width: 100px;
   height: 5px;
-  background: #003b71;
+  background: #050904;
+
 }
 
 .about .list {
@@ -776,7 +777,7 @@ button {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 5px solid #62AD4C;
+  border: 5px solid #878a86;
   margin-top: 20px;
   margin-right: 20px;
 }
@@ -795,7 +796,7 @@ button {
 }
 
 .customer .item h1 span {
-  color: #003b71;
+  color: #74B661;
   font-size: 17px;
   font-weight: 300;
 }
@@ -803,13 +804,13 @@ button {
 .owl-nav span {
   font-size: 20px;
   padding: 5px 25px;
-  background: #050144;
+  background: #74B661;
   color: white;
   transition: 0.5s;
 }
 
 .owl-nav span:hover {
-  background: #003b71;
+  background: black;
 }
 
 /*-------------customer-------------*/
@@ -861,6 +862,14 @@ button {
   }
 }
 
+.news{
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .newsection{
   margin: 200px auto;
   padding: 20px;
@@ -990,7 +999,7 @@ button {
 
 
 .content-section {
-  background-color:rgb(188, 235, 255);
+  background-color:#fff;
   font-family: "Poppins";
 }
 
@@ -1014,7 +1023,7 @@ button {
 {
   padding-left: 9.25em;
   text-align: left;
-  max-width:60% ;
+  max-width:80% ;
 }
 .left-content form 
 {
@@ -1059,8 +1068,9 @@ background-color: #555;
 }
 
 .right-content img {
-  max-height: 75%;
-  max-width: 100%;
+  max-height: 70%;
+  max-width: 70%;
+  text-align: right;
 }
 .agent-button {
   background-color: rgb(55, 55, 231);
