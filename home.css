@@ -808,3 +808,178 @@ content: none;
   }
 
 }
+
+
+
+
+
+
+
+
+/* code for testimonial */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container-testimonial {
+  max-width: 80%;
+  margin: auto;
+}
+
+/* slide starts */
+select {
+  border: none;
+  margin-left: 20px;
+  outline: none;
+}
+
+.top {
+  margin-top: 10%;
+}
+
+.mtop {
+  margin-top: 5%;
+}
+
+.left, .right {
+  width: 50%;
+  padding: 20px;
+}
+
+.home {
+  background: #F6F7F8;
+  height: 85vh;
+}
+
+.slide {
+  width: 100%;
+  height: 70vh;
+}
+
+.owl-dots span {
+  font-size: 20px;
+  padding: 4px 20px;
+}
+
+.slide h3 {
+  color: #74B661;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slide h1 {
+  font-size: 50px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
+/*-------------slide ends-------------*/
+
+
+
+
+
+/*-------------about-------------*/
+.heading h3 {
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #62AD4C;
+  margin-top: 10px;
+}
+
+.heading h2 {
+  font-size: 40px;
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #62AD4C;
+}
+
+/*-------------product-------------*/
+
+
+.heading2 {
+  text-align: center;
+}
+
+.heading2::after {
+  left: 47%;
+}
+
+.product .content {
+  text-align: left;
+}
+
+.product .text h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.product .text p {
+  margin: 0;
+}
+
+.product .text p span {
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+/*-------------product-------------*/
+/*-------------services-------------*/
+
+
+
+/*-------------testimonial box created using this code below-------------*/
+.customer .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #62AD4C;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.customer .img img {
+  border-radius: 50%;
+}
+
+.customer .item {
+  padding: 20px;
+  background: #F6F7F8;
+}
+
+.customer .item h1 {
+  font-weight: 500;
+}
+
+.customer .item h1 span {
+  color: #74B661;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.owl-nav span {
+  font-size: 20px;
+  padding: 5px 25px;
+  background: #74B661;
+  color: white;
+  transition: 0.5s;
+}
+
+.owl-nav span:hover {
+  background: black;
+}

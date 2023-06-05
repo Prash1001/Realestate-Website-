@@ -385,7 +385,7 @@
 
 
 
-
+/* slider code */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -952,6 +952,7 @@ button {
 
 
 
+/* george sell page replicate starts*/
 
 .sell-home-section {
   background-image: url('images/sell3.png');
@@ -1150,6 +1151,8 @@ background-color: #555;
   max-height: 55%;
   max-width: 100%;
 }
+
+
 @media (max-width: 768px) {
   .right-content2 {
       display: none;

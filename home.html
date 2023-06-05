@@ -7,6 +7,13 @@
     <title>Home</title>
     <link rel="icon" type="image/png" sizes="4x4" href="images/domologo1.png">
 
+    <!-- links for testimonial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- links for testimonial ends -->
+
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="home.css">
     
@@ -92,52 +99,68 @@
         </div>
       </section>
 
-	  <section class="testimonialsec">
-		<h2>Why you should choose DOMO</h2>
-		<div class="testimonial-section">
-		  <div class="slider-container">
-			<div class="testimonial-slider">
-			  <div class="testimonial-card">
-				<div class="testimonial-photo">
-				  <img src="images/2.jpg" alt="Sample Image">
-				</div>
-				<h3 class="testimonial-name">John Doe</h3>
-				<p class="testimonial-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae commodo libero.</p>
-			  </div>
-			  <div class="testimonial-card">
-				<div class="testimonial-photo">
-				  <img src="images/2.jpg" alt="Sample Image">
-				</div>
-				<h3 class="testimonial-name">Jane Smith</h3>
-				<p class="testimonial-paragraph">Praesent in purus mauris. Sed ac velit justo. Ut non bibendum magna.</p>
-			  </div>
-			  <div class="testimonial-card">
-				  <div class="testimonial-photo">
-					<img src="images/2.jpg" alt="Sample Image">
-				  </div>
-				  <h3 class="testimonial-name">Jane Smith</h3>
-				  <p class="testimonial-paragraph">Praesent in purus mauris. Sed ac velit justo. Ut non bibendum magna.</p>
-				</div>
-			  <div class="testimonial-card">
-				<div class="testimonial-photo">
-				  <img src="images/2.jpg" alt="Sample Image">
-				</div>
-				<h3 class="testimonial-name">Mike Johnson</h3>
-				<p class="testimonial-paragraph">Aenean vulputate feugiat mi. Mauris lobortis ex vel lacus malesuada, vel finibus lacus sollicitudin.</p>
-			  </div>
-			  <!-- Add more testimonial cards here -->
-			</div>
-		  </div>
-		  <div class="slider-controls">
-			<div class="slider-control prev-button">
-			  <i class="fas fa-chevron-left"></i>
-			</div>
-			<div class="slider-control next-button">
-			  <i class="fas fa-chevron-right"></i>
-			</div>
-		  </div>
-		</div>
-	  </section>
+
+
+    <section class="customer mtop">
+    <div class="container-testimonial">
+      <div class="heading heading2">
+        <h2>Customer Review </h2>
+      </div>
+
+
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+             
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+             
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
       <section class="section2">
         <div class="card-section2">
@@ -310,5 +333,47 @@
 		  
 	</script>
     
+
+
+  <!-- testimonial -->
+
+   <!-- Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- Owl Carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- Custom Javascript -->
+   <script>
+     $(document).ready(function() {
+       $(".owl-carousel").owlCarousel({
+         items: 1,
+         loop: true,
+         nav: false,
+         dots: true,
+         autoplay: false,
+       });
+     });
+   </script>
+
+   <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+  <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
+
 </body>
 </html>
