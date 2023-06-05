@@ -23,7 +23,7 @@ textarea {
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 2rem;
   overflow: hidden;
   display: flex;
@@ -736,3 +736,11 @@ textarea.input {
 
 }
 
+
+/* final addition of text css  */
+.con-text {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
