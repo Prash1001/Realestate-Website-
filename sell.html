@@ -42,63 +42,68 @@
     </div>
     <section class="sell-home-section">
         <div class="sell-home-content">
-          <h1>Sell your home with confidence</h1>
-          <p>Zillow is making it simpler to sell your home and move forward.</p>
+          <h1>DOMO Real Estate: Unleash Your home's potential</h1>
+          <p>Where selling becomes effortlessly extraordinary</p>
         </div>
     </section>
     <section class="content-section">
         <div class="two">
          <div class="left-content">
-            <h2>Sell with a partner agent or get a cash offer</h2>
-             <p>Zillow helps you sell your home, your way. Easily explore your selling options below and get personalized market value estimates — we can even help you choose the best option when you’re ready.
-
-                </p>
-             <p>This experience is currently available in the Atlanta, Dallas, Houston, Phoenix and Raleigh markets. We'll be expanding to more markets soon.</p>   
-             <form>
-                <div class="search-container">
-                  <input type="text" placeholder="Search">
-                  <button type="submit"><i class="fas fa-search"></i></button>
-                </div>
-              </form>
+            <h2>DOMO Real Estate helps you sell smart & easy from home</h2>
           </div>
         <div class="right-content">
-            <img src="images/tempsell.png" alt="Image">
-          </div>
-        </div>
-    </section>
+            <!-- <img src="images/tempsell.png" alt="Image"> -->
+            <div class="form">
+        
+                <div class="contact-form">
+                  
+                <form action="index.html autocomplete="off">
+                <h3 class="title"> Contact us to sell your home </h3>
+                  
+                    <div class="input-container">
+                      <input type="text" name="name" class="input" />
+                      <label for=""> Name </label>
+                      <span> Name </span>
+                    </div>
+                    
+                    <div class="input-container">
+                      <input type="email" name="email" class="input" />
+                      <label for=""> Email </label>
+                      <span> Email </span>
+                    </div>
+                    
+                    <div class="input-container">
+                      <input type="tel" name="phone" class="input" />
+                      <label for=""> Phone </label>
+                      <span> Phone </span>
+                    </div>
 
-    <section class="content-section2">
-        <div class="three">
-         <div class="left-content2">
-            <h2>Sell with a partner agent or get a cash offer</h2>
-             <p>Zillow helps you sell your home, your way. Easily explore your selling options below and get personalized market value estimates — we can even help you choose the best option when you’re ready.
-
-                </p>
-             <p>This experience is currently available in the Atlanta, Dallas, Houston, Phoenix and Raleigh markets. We'll be expanding to more markets soon.</p>   
-            
-             <button class="agent-button">Find an Agent</button>
-             <div class="pointwise-text">
-                <div class="column">
-                  <ul>
-                    <li><i class="fas fa-check"></i>Potential for bidding wars</li>
-                    <li><i class="fas fa-check"></i>Access to local market expertise</li>
-                    <li><i class="fas fa-check"></i>Navigate a stressful process with a dedicated guide</li>
-                  </ul>
-                </div>
-                <div class="column">
-                  <ul>
-                    <li><i class="fas fa-check"></i>Potential for bidding wars</li>
-                    <li><i class="fas fa-check"></i>Access to local market expertise</li>
-                    <li><i class="fas fa-check"></i>Navigate a stressful process with a dedicated guide</li>
-                  </ul>
+                    <div class="input-container">
+                        <input type="text" name="area" class="input" />
+                        <label for=""> Area </label>
+                        <span> Area </span>
+                      </div>
+                    
+                    <div class="input-container">
+                      <select id="bhk" name="bhk">
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <!-- Add more options as needed -->
+                      </select>
+        
+                    </div>
+                    <br>
+                    
+                    <input type="submit" value="Send" class="btn" />
+                  </form>
                 </div>
               </div>
           </div>
-        <div class="right-content2">
-            <img src="images/tempsell.png" alt="Image">
-          </div>
         </div>
     </section>
+
     <footer class="footer-distributed">
     
         <div class="footer-left">
@@ -201,6 +206,26 @@
         
         let observer = new IntersectionObserver(callback, options);
         observer.observe(document.querySelector('#myVideo'));
+    </script>
+    <!-- script for contact form -->
+    <script>
+        const inputs = document.querySelectorAll(".input");
+        function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+            parent.classList.remove("focus");
+        }
+        }
+
+        inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+        });
     </script>
       <a href="tel:1234567890" class="floating-icon"><i class="fa fa-phone"></i></a>
       <a href="https:/wa.me/"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
