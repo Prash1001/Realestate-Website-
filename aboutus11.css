@@ -623,8 +623,7 @@ button {
   content: '';
   width: 100px;
   height: 5px;
-  background: #050904;
-
+  background: #050144;
 }
 
 .about .list {
@@ -804,13 +803,13 @@ button {
 .owl-nav span {
   font-size: 20px;
   padding: 5px 25px;
-  background: #74B661;
+  background: #050144;
   color: white;
   transition: 0.5s;
 }
 
 .owl-nav span:hover {
-  background: black;
+  background: #0b009e;
 }
 
 /*-------------customer-------------*/
