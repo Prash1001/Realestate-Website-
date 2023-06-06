@@ -700,7 +700,7 @@ height: 100%;
 .footer-distributed .footer-links a{
   display:inline-block;
   line-height: 1.8;
-font-weight:400;
+  font-weight:400;
   text-decoration: none;
   color:  inherit;
 }
@@ -731,9 +731,9 @@ font-weight:400;
   vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
+.footer-distributed,.footer-center,i.fa-envelope{
+  font-size: 10px;
+  line-height: 18px;
 }
 
 .footer-distributed .footer-center p{

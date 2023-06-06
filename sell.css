@@ -446,9 +446,9 @@
         vertical-align: middle;
     }
     
-    .footer-distributed .footer-center i.fa-envelope{
-        font-size: 17px;
-        line-height: 38px;
+    .footer-distributed,.footer-center,i.fa-envelope{
+        font-size: 13px;
+        line-height: 18px;
     }
     
     .footer-distributed .footer-center p{

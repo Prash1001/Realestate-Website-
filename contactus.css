@@ -46,8 +46,13 @@ textarea {
 .contact-form {
   background-color: royalblue;
   position: relative;
+  padding: 30px;
 }
 
+.contact-us-new{
+  padding: 1px;
+  text-align: left;
+}
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, purple);
@@ -79,7 +84,7 @@ textarea {
 }
 
 form {
-  padding: 2.3rem 2.2rem;
+  padding: 10px;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -575,6 +580,7 @@ textarea.input {
 
 .footer-distributed .footer-left{
     width: 40%;
+    font-size: 17px;
 }
 
 /* The company logo */
@@ -631,10 +637,11 @@ textarea.input {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
+.footer-distributed,.footer-center,i.fa-envelope{
+  font-size: 14px;
+  line-height: 18px;
 }
+
 
 .footer-distributed .footer-center p{
     display: inline-block;
@@ -693,7 +700,7 @@ textarea.input {
 }
 
 .footer-distributed .footer-icons{
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .footer-distributed .footer-icons a{
