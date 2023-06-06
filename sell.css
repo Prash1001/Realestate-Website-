@@ -177,8 +177,8 @@
     }}
 
     .sell-home-section {
-        background-image: url('images/sell3.png');
-        background-size: contain;
+        background-image: url('images/sellpic.jpg');
+        background-size:cover;
         background-position: center;
 
         
