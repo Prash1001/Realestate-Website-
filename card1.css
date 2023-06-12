@@ -217,17 +217,20 @@ content: none;
 
 .card {
   width: calc(33.33% - 30px);
-  margin-bottom: 20px;
-
+  margin-bottom: 30px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-decoration: none;
-  
   position: relative;
   height: 400px;
   margin-right: 30px;
-  
+  transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-image {
@@ -244,12 +247,11 @@ content: none;
   position: absolute;
   bottom: 0;
   left: 0;
-  background:transparent;
-  color: White;
+  background: transparent;
+  color: white;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-
 }
 
 .card-title h2 {
@@ -260,5 +262,9 @@ content: none;
 @media (max-width: 767px) {
   .card {
     width: calc(100%);
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
   }
 }
