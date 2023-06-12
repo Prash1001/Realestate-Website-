@@ -1205,3 +1205,55 @@ background-color: #555;
       margin-right: 10px;
     }
 }
+
+.about-us {
+  padding: 65px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img img {
+  max-width: 85%;
+  
+}
+
+.profile-img{
+  align-self: center;
+}
+
+.profile-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  margin-bottom: 15px;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.profile-details ul li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 30%;
+  }
+
+  .profile-details {
+    width: 70%;
+    padding-left: 30px;
+  }
+}
