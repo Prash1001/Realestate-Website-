@@ -16,85 +16,70 @@
         <div class="container">
             <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-
+    
             <nav>
                 
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 
                 <ul class="primary-nav">
-
+    
                 </ul>
-
+    
                 <ul class="secondary-nav">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="buy.html">Buy</a></li>
-					<li><a href="rent.html">Rent</a></li>
-                    <li><a href="sell.html">Sell</a></li>
-
-                </ul>
-                <ul class="tertiary-nav">
-					<li><a href="D_blog_grid.html">Blogs</a></li>
-                    <li class="current"><a href="D_projects.html">Projects</a></li>
-                    <li><a href="D_about_us.html">About Us</a></li>
-                    <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
-                </ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="buy.html">Buy</a></li>
+                  <li><a href="rent.html">Rent</a></li>
+                  <li><a href="sell.html">Sell</a></li>
+    
+              </ul>
+              <ul class="tertiary-nav">
+                  <li><a href="D_blog_grid.html">Blogs</a></li>
+                  <li  class="current"><a href="D_projects.html">Projects</a></li>
+                  <li><a href="D_about_us.html">About Us</a></li>
+                  <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+              </ul>
             </nav>
         </div>
     </div>
-    <!-- End of Landing Page -->
-    <!-- Responsive Cards Start -->
-    <section class="contain">
-    <div class="card-container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="images/n1.jpeg" alt="">
-                <h4>Silver Membership</h4>
+ 
+    <section class="card-section">
+    
+        <a href="project_details.html" class="card">
+            <div class="card-image">
+              <img src="images/Build One.jpg" alt="Image 1">
+              <div class="card-title">
+                <h2>Kiara Towers</h2>
+              </div>
             </div>
-            <div class="content">
-              <p><b>Typology:</b> 2,3,4 BHK, villas,building<br><b>price:</b> $1100<br><b>location:</b> mumbai-kalyan-dombivli.<br><b>contact:</b> 1234567891</p>
-      </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="images/n3.jpeg" alt="">
-                <h4>Gold Membership</h4>
+          </a>
+          <a href="project_details.html" class="card">
+            <div class="card-image">
+              <img src="images/Build One.jpg" alt="Image 1">
+              <div class="card-title">
+                <h2>Kiara Towers</h2>
+              </div>
             </div>
-            <div class="content">
-                <p><b>Typology:</b> 2,3,4 BHK, villas,building<br><b>price:</b> $1100<br><b>location:</b> mumbai-kalyan-dombivli.<br><b>contact:</b> 1234567891</p>
+          </a>
+          <a href="project_details.html" class="card">
+            <div class="card-image">
+              <img src="images/Build One.jpg" alt="Image 1">
+              <div class="card-title">
+                <h2>Kiara Towers</h2>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="images/n4.jpeg" alt="">
-                <h4>Platinum Membership</h4>
+          </a>
+          <a href="project_details.html" class="card">
+            <div class="card-image">
+              <img src="images/Build One.jpg" alt="Image 1">
+              <div class="card-title">
+                <h2>Kiara Towers</h2>
+              </div>
             </div>
-            <div class="content">
-                <p><b>Typology:</b> 2,3,4 BHK, villas,building<br><b>price:</b> $1100<br><b>location:</b> mumbai-kalyan-dombivli.<br><b>contact:</b> 1234567891</p>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- Responsive Cards End -->
-    <script>
+          </a>
+      
+    </section>
 
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-    
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-    
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    
-    
-    
-    </script>
-    <a href="tel:9892956959" class="floating-icon"><i class="fa fa-phone"></i></a>
-    <a href="https:/wa.me/9892956959"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-</body>
+
 <footer class="footer-distributed">
     
     <div class="footer-left">
@@ -161,6 +146,25 @@
 
 </footer>
 
+<script>
 
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+
+
+</script>
+<a href="tel:9892956959" class="floating-icon"><i class="fa fa-phone"></i></a>
+<a href="https:/wa.me/9892956959"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
 <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
+</body>
 </html>

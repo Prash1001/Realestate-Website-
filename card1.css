@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Rubik:wght@500;700;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 :root {
   --primary-color: #007AF3;
 }
@@ -14,86 +15,6 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
-
-/* Landing Section End */
-
-/* Responsive Cards Start */
-.card-container{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 30px;
-}
-
-.card-container .card{
-    position: relative;
-    max-width: 330px;
-    height: 270px;
-    background:#6ea5db;
-    margin: 50px 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 7px 7px 3px rgba(0, 0, 0, 0.212);
-    transition: 0.5s ease-in-out;
-}
-
-.card-container .card:hover{
-    height: 420px;
-}
-
-.card-container .card .imgBx{
-    color: #ffffff;
-    background: rgb(54, 54, 54);
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    z-index: 10;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
-    border-radius: 4px;
-}
-
-.card-container .card .imgBx h4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-
-.card-container .card .imgBx img{
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-.card-container .card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 5px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    line-height: 29px;
-}
-
-.card-container .card .content p{
-    padding: 20px;
-}
-
-.card-container .card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
-
 
 
 .footer-distributed{
@@ -285,81 +206,59 @@ content: none;
 
 }
 
-@media only screen and (max-width: 1025px){
-  .card-container{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0px;
+.card-section {
+  padding-left: 30px;
+  padding-right: 0px;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.card-container .card{
-    position: relative;
-    max-width: 300px;
-    height: 270px;
-    background:#6ea5db;
-    margin: 50px 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 7px 7px 3px rgba(0, 0, 0, 0.212);
-    transition: 0.5s ease-in-out;
+.card {
+  width: calc(33.33% - 30px);
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  
+  position: relative;
+  height: 400px;
+  margin-right: 30px;
+  
 }
 
-.card-container .card:hover{
-    height: 420px;
+.card-image {
+  position: relative;
 }
 
-.card-container .card .imgBx{
-    color: #ffffff;
-    background: rgb(54, 54, 54);
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    z-index: 10;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
-    border-radius: 4px;
+.card-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-.card-container .card .imgBx h4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:transparent;
+  color: White;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
 }
 
-.card-container .card .imgBx img{
-    max-width: 100%;
-    border-radius: 4px;
+.card-title h2 {
+  margin: 0;
 }
 
-.card-container .card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 5px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    line-height: 29px;
-}
 
-.card-container .card .content p{
-    padding: 20px;
-}
-
-.card-container .card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
-
+@media (max-width: 767px) {
+  .card {
+    width: calc(100%);
+  }
 }
