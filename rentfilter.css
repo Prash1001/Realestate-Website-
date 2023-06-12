@@ -81,6 +81,7 @@
   display: none;
   z-index: 999;
   margin-top: 5px;
+  border: 1px solid #000;
 }
 
 .dropdown-menu.open {
