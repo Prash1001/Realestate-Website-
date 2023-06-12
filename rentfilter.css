@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.newfilter {
+  font-family: "Poppins";
+  border: 2px solid lightblue;
+  box-shadow: 1px 1px 2px lightblue, -1px -1px 2px lightblue;
+}
+
+.search-contain {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-filter-bar {
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+
+.search-filter-bar .dropdown select {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: black;
+}
+
+.dropdown option {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.dropdown {
+  background-color: lightcyan;
+  font-weight: bold;
+  border-radius: 5px;
+  height:50px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px lightblue, -2px -2px 4px lightblue;
+  width: 150px;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  padding: 10px 12px;
+  background-color: lightcyan;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px lightblue, -2px -2px 4px lightblue;
+  width:150px;
+  text-align: left;
+  height:50px;
+}
+
+.dropdown-toggle:hover {
+  background-color: lightcyan;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: lightcyan;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 999;
+  margin-top: 5px;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown-menu input[type="radio"],
+.dropdown-menu input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.save-search-button {
+  padding: 10px 20px;
+  background-color:royalblue;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  height:50px;
+  font-weight: bold;
+}
+
+.save-search-button:hover {
+  background-color: darkblue;
+}
+
+.price-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.price-button {
+  padding: 10px 12px;
+  background-color: lightcyan;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px lightblue, -2px -2px 4px lightblue;
+  width:150px;
+  text-align: left;
+  height:50px;
+}
+
+.price-button:hover {
+  background-color: lightcyan;
+}
+
+.price-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: lightcyan;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 999;
+  margin-top: 5px;
+  width:125px;
+
+}
+
+.price-menu.open {
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown1 {
+  padding: 2px;
+  border-radius: 10px;
+  float: left; 
+
+}
+
+.dropdown1.min {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+.dropdown1.min select {
+  font-size: 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 525;
+  width:58px;
+  margin-right: 10px;
+}
+
+.dropdown1.max select {
+  font-size: 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 525;
+  width:58px;
+}
+
+.dropdown1.max option {
+  font-size: 15px;
+  background-color: rgb(202, 227, 236);
+  border-radius: 5px;
+}
+
+.dropdown1.min option {
+  font-size: 15px;
+  background-color: rgb(202, 227, 236);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1025px) {
+  .search-contain {
+    padding: 10px; 
+  }
+
+  .dropdown {
+    width: 100px; 
+  }
+
+  .dropdown1.min,
+  .dropdown1.max {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .price-dropdown,
+  .dropdown2 {
+    margin-bottom: 0px; 
+  }
+  .dropdown option {
+    padding: 3px;
+    font-size: 10px;
+  }
+  .price-button{
+    width:100px;
+  }
+  .dropdown-toggle{
+    width:100px;
+  }
+  .save-search-button{
+    width:100px;
+  }
+  .price-menu {
+    width:80px;
+
+  }
+  .dropdown1.min select,
+  .dropdown1.max select 
+{
+    width: 75px; 
+  }
+  .dropdown1 {
+    display: inline-block; 
+    float:none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dropdown {
+    width: 100px; 
+  }
+
+  .dropdown1.min,
+  .dropdown1.max {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .search-filter-bar .dropdown select
+  {    width: 100px; 
+
+  }
+  .price-menu {
+    width:100px;
+
+  }
+  .dropdown1.min select,
+  .dropdown1.max select 
+{
+    width: 95px; 
+  }
+
+  .dropdown-menu,
+  .price-menu {
+    padding: 0px;
+  }
+  .dropdown option {
+    padding: 3px;
+    font-size: 10px;
+  }
+  .price-button{
+    width:100px;
+  }
+  .dropdown-toggle{
+    width:100px;
+  }
+  .save-search-button{
+    width:100px;
+  }
+  .dropdown1 {
+    display: inline-block; 
+    float:none;
+  }
+}
+
