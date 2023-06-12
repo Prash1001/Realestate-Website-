@@ -17,7 +17,7 @@
   padding: 15px;
   background-color: white;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -39,7 +39,7 @@
   background-color: lightcyan;
   font-weight: bold;
   border-radius: 5px;
-  height:50px;
+  height: 50px;
   padding: 0 10px;
   box-sizing: border-box;
   border: 1px solid black;
@@ -62,9 +62,9 @@
   font-weight: bold;
   border: 1px solid black;
   box-shadow: 2px 2px 4px lightblue, -2px -2px 4px lightblue;
-  width:150px;
+  width: 150px;
   text-align: left;
-  height:50px;
+  height: 50px;
 }
 
 .dropdown-toggle:hover {
@@ -99,12 +99,12 @@
 
 .save-search-button {
   padding: 10px 20px;
-  background-color:royalblue;
+  background-color: royalblue;
   color: white;
   border-radius: 5px;
   transition: background-color 0.3s;
   cursor: pointer;
-  height:50px;
+  height: 50px;
   font-weight: bold;
 }
 
@@ -127,9 +127,9 @@
   font-weight: bold;
   border: 1px solid black;
   box-shadow: 2px 2px 4px lightblue, -2px -2px 4px lightblue;
-  width:150px;
+  width: 150px;
   text-align: left;
-  height:50px;
+  height: 50px;
 }
 
 .price-button:hover {
@@ -146,12 +146,14 @@
   display: none;
   z-index: 999;
   margin-top: 5px;
-  width:125px;
+  width: 125px;
+
 
 }
 
 .price-menu.open {
   display: block;
+  border: 100px black;
 }
 
 .menu {
@@ -163,7 +165,7 @@
 .dropdown1 {
   padding: 2px;
   border-radius: 10px;
-  float: left; 
+  float: left;
 
 }
 
@@ -178,8 +180,9 @@
   background-color: white;
   border-radius: 5px;
   font-weight: 525;
-  width:58px;
+  width: 58px;
   margin-right: 10px;
+
 }
 
 .dropdown1.max select {
@@ -187,7 +190,7 @@
   background-color: white;
   border-radius: 5px;
   font-weight: 525;
-  width:58px;
+  width: 58px;
 }
 
 .dropdown1.max option {
@@ -204,96 +207,107 @@
 
 @media screen and (max-width: 1025px) {
   .search-contain {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .dropdown {
-    width: 100px; 
+    width: 100px;
   }
 
   .dropdown1.min,
   .dropdown1.max {
-    width: 40px; 
+    width: 40px;
     height: 40px;
   }
 
   .price-dropdown,
   .dropdown2 {
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
   }
+
   .dropdown option {
     padding: 3px;
     font-size: 10px;
   }
-  .price-button{
-    width:100px;
+
+  .price-button {
+    width: 100px;
   }
-  .dropdown-toggle{
-    width:100px;
+
+  .dropdown-toggle {
+    width: 100px;
   }
-  .save-search-button{
-    width:100px;
+
+  .save-search-button {
+    width: 100px;
   }
+
   .price-menu {
-    width:80px;
+    width: 80px;
 
   }
+
   .dropdown1.min select,
-  .dropdown1.max select 
-{
-    width: 75px; 
+  .dropdown1.max select {
+    width: 75px;
   }
+
   .dropdown1 {
-    display: inline-block; 
-    float:none;
+    display: inline-block;
+    float: none;
   }
 }
 
 @media screen and (max-width: 450px) {
   .dropdown {
-    width: 100px; 
+    width: 100px;
   }
 
   .dropdown1.min,
   .dropdown1.max {
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
   }
 
-  .search-filter-bar .dropdown select
-  {    width: 100px; 
+  .search-filter-bar .dropdown select {
+    width: 100px;
 
   }
+
   .price-menu {
-    width:100px;
+    width: 100px;
 
   }
+
   .dropdown1.min select,
-  .dropdown1.max select 
-{
-    width: 95px; 
+  .dropdown1.max select {
+    width: 95px;
   }
 
   .dropdown-menu,
   .price-menu {
     padding: 0px;
   }
+
   .dropdown option {
     padding: 3px;
     font-size: 10px;
   }
-  .price-button{
-    width:100px;
+
+  .price-button {
+    width: 100px;
   }
-  .dropdown-toggle{
-    width:100px;
+
+  .dropdown-toggle {
+    width: 100px;
   }
-  .save-search-button{
-    width:100px;
+
+  .save-search-button {
+    width: 100px;
   }
+
   .dropdown1 {
-    display: inline-block; 
-    float:none;
+    display: inline-block;
+    float: none;
   }
 }
-

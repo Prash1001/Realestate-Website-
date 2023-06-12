@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
-    <link rel="stylesheet" href="rent.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="rentfilter.css">
-    <link rel="stylesheet" href="floating_icon.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
+  <link rel="stylesheet" href="rent.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="rentfilter.css">
+  <link rel="stylesheet" href="floating_icon.css">
+
 </head>
+
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
-           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
+      <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-            <nav>
-                
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                
-                <ul class="primary-nav">
+      <nav>
 
-                </ul>
+        <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
 
-                <ul class="secondary-nav">
-                  <li><a href="home.html">Home</a></li>
-                  <li class="current"><a href="buy.html">Buy</a></li>
-                  <li><a href="rent.html">Rent</a></li>
-                  <li><a href="sell.html">Sell</a></li>
+        <ul class="primary-nav">
 
-              </ul>
-              <ul class="tertiary-nav">
-                  <li><a href="D_blog_grid.html">Blogs</a></li>
-                  <li><a href="D_projects.html">Projects</a></li>
-                  <li><a href="D_about_us.html">About Us</a></li>
-                  <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
-              </ul>
-            </nav>
-        </div>
+        </ul>
+
+        <ul class="secondary-nav">
+          <li><a href="home.html">Home</a></li>
+          <li class="current"><a href="buy.html">Buy</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="sell.html">Sell</a></li>
+
+        </ul>
+        <ul class="tertiary-nav">
+          <li><a href="D_blog_grid.html">Blogs</a></li>
+          <li><a href="D_projects.html">Projects</a></li>
+          <li><a href="D_about_us.html">About Us</a></li>
+          <li class="go-premium-cta"><a href="D_Contact_us.html">Contact us</a></li>
+        </ul>
+      </nav>
     </div>
-    <section class="newfilter">
-      <form id="search-form">
-        <div class="search-filter-bar">
-          <div class="search-contain">
-            <select class="dropdown">
-              <option value="rent">Rent</option>
-              <option value="Buy">Buy</option>
-              
-              <!-- Add more options here -->
-            </select>
-          </div>
-          <div class="search-contain">
-            <select class="dropdown">
-              <option value="bedrooms">BHK</option>
-              <option value="bedrooms">1 BHK</option>
-              <option value="bedrooms">2 BHK</option>
-              <option value="bedrooms">3 BHK</option>
-              <!-- Add more options here -->
-            </select>
-          </div>
-          <div class="search-contain">
-            <select class="dropdown">
-              <option value="Area">Area</option>
-              <option value="Parel">Parel</option>
-              <option value="Worli">Worli</option>
-              <option value="Sion">Sion</option>
-              <!-- Add more options here -->
-            </select>
-          </div>
-          <div class="search-contain">
+  </div>
+  <section class="newfilter">
+    <form id="search-form">
+      <div class="search-filter-bar">
+        <div class="search-contain">
+          <select class="dropdown">
+            <option value="Buy">Buy</option>
+            <option value="Rent">Rent</option>
+
+            <!-- Add more options here -->
+          </select>
+        </div>
+        <div class="search-contain">
+          <select class="dropdown">
+            <option value="bedrooms">BHK</option>
+            <option value="bedrooms">1 BHK</option>
+            <option value="bedrooms">2 BHK</option>
+            <option value="bedrooms">3 BHK</option>
+            <!-- Add more options here -->
+          </select>
+        </div>
+        <div class="search-contain">
+          <select class="dropdown">
+            <option value="Area">Area</option>
+            <option value="Parel">Parel</option>
+            <option value="Worli">Worli</option>
+            <option value="Sion">Sion</option>
+            <!-- Add more options here -->
+          </select>
+        </div>
+        <div class="search-contain">
           <div class="dropdown2 price-dropdown">
-            <button class="dropdown-toggle price-button" id="priceDropdown" aria-haspopup="true" aria-expanded="false">Price</button>
+            <button class="dropdown-toggle price-button" id="priceDropdown" aria-haspopup="true"
+              aria-expanded="false">Price</button>
             <div class="dropdown-menu price-menu" aria-labelledby="priceDropdown">
               <ul class="menu">
                 <li>
@@ -97,183 +101,185 @@
               </ul>
             </div>
           </div>
-          </div>
-          <div class="search-contain">
-            <div class="dropdown2">
-              <button class="dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">More</button>
-              <div class="dropdown-menu" aria-labelledby="moreDropdown">
-                <label for="move-in-date">Move in date:</label>
-                <input type="date" id="move-in-date" class="datepicker">
-                <label><input type="checkbox" name="more-options" value="no-amenities">With Amenities</label>
-                <label><input type="checkbox" name="more-options" value="no-amenities">Without Amenities</label>
-                <label><input type="checkbox" name="more-options" value="no-pets">With Pets</label>
-                <label><input type="checkbox" name="more-options" value="no-pets">Without Pets</label>
-                <label><input type="checkbox" name="more-options" value="sea-view">Sea View</label>
-                <label><input type="checkbox" name="more-options" value="sea-view">City View</label>
-              </div>
-            </div>
-          </div>
-          <div class="search-contain">
-            <button type="submit" id="search-button" class="save-search-button">Search</button>
-    
-          </div>
-          </div>
-        </form>
-    </section>
-    <section class="card-section">
-      <a href="property.html" class="card">
-        <div class="card-image">
-          <img src="images/Build One.jpg" alt="Image 1">
         </div>
-        <div class="card-details">
-          <h2>Card Title 1</h2>
-          <p><i class="fas fa-map-marker-alt"></i> Location</p>
-          <div class="card-info">
-            <div class="bed-icon">
-              <i class="fas fa-bed"></i> 2 BHK
-            </div>
-            <div class="area-icon">
-              <i class="far fa-square"></i> 3000 sq. ft.
+        <div class="search-contain">
+          <div class="dropdown2">
+            <button class="dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">More</button>
+            <div class="dropdown-menu" aria-labelledby="moreDropdown">
+              <label for="move-in-date">Move in date:</label>
+              <input type="date" id="move-in-date" class="datepicker">
+              <label><input type="checkbox" name="more-options" value="no-amenities">With Amenities</label>
+              <label><input type="checkbox" name="more-options" value="no-amenities">Without Amenities</label>
+              <label><input type="checkbox" name="more-options" value="no-pets">With Pets</label>
+              <label><input type="checkbox" name="more-options" value="no-pets">Without Pets</label>
+              <label><input type="checkbox" name="more-options" value="sea-view">Sea View</label>
+              <label><input type="checkbox" name="more-options" value="sea-view">City View</label>
             </div>
           </div>
         </div>
-      </a>
-      <a href="property.html" class="card">
-        <div class="card-image">
-          <img src="images/sell3.png" alt="Image 1">
-        </div>
-        <div class="card-details">
-          <h2>Card Title 1</h2>
-          <p><i class="fas fa-map-marker-alt"></i> Location</p>
-          <div class="card-info">
-            <div class="bed-icon">
-              <i class="fas fa-bed"></i> 2 BHK
-            </div>
-            <div class="area-icon">
-              <i class="far fa-square"></i> 3000 sq. ft.
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="property.html" class="card">
-        <div class="card-image">
-          <img src="images/sell3.png" alt="Image 1">
-        </div>
-        <div class="card-details">
-          <h2>Card Title 1</h2>
-          <p><i class="fas fa-map-marker-alt"></i> Location</p>
-          <div class="card-info">
-            <div class="bed-icon">
-              <i class="fas fa-bed"></i> 2 BHK
-            </div>
-            <div class="area-icon">
-              <i class="far fa-square"></i> 3000 sq. ft.
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="property.html" class="card">
-        <div class="card-image">
-          <img src="images/sell3.png" alt="Image 1">
-        </div>
-        <div class="card-details">
-          <h2>Card Title 1</h2>
-          <p><i class="fas fa-map-marker-alt"></i> Location</p>
-          <div class="card-info">
-            <div class="bed-icon">
-              <i class="fas fa-bed"></i> 2 BHK
-            </div>
-            <div class="area-icon">
-              <i class="far fa-square"></i> 3000 sq. ft.
-            </div>
-          </div>
-        </div>
-      </a>
-    </section>
-    
-    <footer class="footer-distributed">
-    
-      <div class="footer-left">
+        <div class="search-contain">
+          <button type="submit" id="search-button" class="save-search-button">Search</button>
 
-          <a class="logofooter" href="#"><img src="images/domologo1.png" alt="DoMofooter"></a>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="card-section">
+    <a href="property.html" class="card">
+      <div class="card-image">
+        <img src="images/Build One.jpg" alt="Image 1">
+      </div>
+      <div class="card-details">
+        <h2>Card Title 1</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <div class="card-info">
+          <div class="bed-icon">
+            <i class="fas fa-bed"></i> 2 BHK
+          </div>
+          <div class="area-icon">
+            <i class="far fa-square"></i> 3000 sq. ft.
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="property.html" class="card">
+      <div class="card-image">
+        <img src="images/sell3.png" alt="Image 1">
+      </div>
+      <div class="card-details">
+        <h2>Card Title 1</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <div class="card-info">
+          <div class="bed-icon">
+            <i class="fas fa-bed"></i> 2 BHK
+          </div>
+          <div class="area-icon">
+            <i class="far fa-square"></i> 3000 sq. ft.
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="property.html" class="card">
+      <div class="card-image">
+        <img src="images/sell3.png" alt="Image 1">
+      </div>
+      <div class="card-details">
+        <h2>Card Title 1</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <div class="card-info">
+          <div class="bed-icon">
+            <i class="fas fa-bed"></i> 2 BHK
+          </div>
+          <div class="area-icon">
+            <i class="far fa-square"></i> 3000 sq. ft.
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="property.html" class="card">
+      <div class="card-image">
+        <img src="images/sell3.png" alt="Image 1">
+      </div>
+      <div class="card-details">
+        <h2>Card Title 1</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Location</p>
+        <div class="card-info">
+          <div class="bed-icon">
+            <i class="fas fa-bed"></i> 2 BHK
+          </div>
+          <div class="area-icon">
+            <i class="far fa-square"></i> 3000 sq. ft.
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
 
-          <p class="footer-links">
-              <a href="home.html" class="link-1">Home</a>
-              
-              <a href="buy.html">Buy</a>
-          
-              <a href="rent.html">Rent</a>
-          
-              <a href="sell.html">sell</a>
-              
-              <a href="D_blog_grid.html">Blogs</a>
-              
-              <a href="D_about_us.html">About Us</a>
+  <footer class="footer-distributed">
 
-              <a href="D_Contact_us.html">Contact Us</a>
+    <div class="footer-left">
 
-          </p>
+      <a class="logofooter" href="home.html"><img src="images/domologo1.png" alt="DoMofooter"></a>
 
-          <p class="footer-company-name">Company Name © 2015</p>
+      <p class="footer-links">
+        <a href="home.html" class="link-1">Home</a>
+
+        <a href="buy.html">Buy</a>
+
+        <a href="rent.html">Rent</a>
+
+        <a href="sell.html">sell</a>
+
+        <a href="D_blog_grid.html">Blogs</a>
+
+        <a href="D_about_us.html">About Us</a>
+
+        <a href="D_Contact_us.html">Contact Us</a>
+
+      </p>
+
+      <p class="footer-company-name">Company Name © 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <p class="icon-my"><a href="https://goo.gl/maps/LcjiNWjzscLYYGym7"> <i class="fa fa-map-marker"></i></p>
+        <!-- <p><span>Level 5, 505, C wing, Trade world Tower,</span>Kamala Mills Compound, Lower Parel, Mumbai,</p> -->
+        <p>Level 5, 505, C wing, Trade world Tower<br>Kamala Mills Compound, Lower Parel, Mumbai,</p></a>
       </div>
 
-      <div class="footer-center">
+      <div>
+        <p class="icon-my"> <a href="tel:9892956959"> <i class="fa fa-phone"></i></p>
+        <p>+91 9892956959</p></a>
+      </div>
 
-          <div>
-            <p class="icon-my"><a href="https://goo.gl/maps/LcjiNWjzscLYYGym7" >   <i class="fa fa-map-marker"></i></p>
-              <!-- <p><span>Level 5, 505, C wing, Trade world Tower,</span>Kamala Mills Compound, Lower Parel, Mumbai,</p> -->
-              <p>Level 5, 505, C wing, Trade world Tower<br>Kamala Mills Compound, Lower Parel, Mumbai,</p></a>
-          </div>
+      <div>
+        <p class="icon-my"><a href="mailto:Info@domorealestate.in"><i class="fa fa-envelope"></i></p>
+        <p><a href="mailto:Info@domorealestate.in">Info@domorealestate.in</a></p></a>
+      </div>
 
-          <div>
-           <p class="icon-my">  <a href="tel:9892956959" > <i class="fa fa-phone"></i></p>
-              <p>+91 9892956959</p></a>
-          </div>
+    </div>
 
-          <div>
-             <p class="icon-my" ><a href="mailto:Info@domorealestate.in" ><i class="fa fa-envelope"></i></p>
-              <p><a href="mailto:Info@domorealestate.in">Info@domorealestate.in</a></p></a>
-          </div>
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Market leaders in rentals, leasing and out-right buying.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/domo.realestate1"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/DOMO_Realestate"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/domo-real-estate/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://instagram.com/domo.realestate?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
 
       </div>
 
-      <div class="footer-right">
-
-          <p class="footer-company-about">
-              <span>About the company</span>
-             Market leaders in rentals, leasing and out-right buying.
-          </p>
-
-          <div class="footer-icons">
-
-              <a href="https://www.facebook.com/domo.realestate1"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/DOMO_Realestate"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/company/domo-real-estate/"><i class="fa fa-linkedin"></i></a>
-              <a href="https://instagram.com/domo.realestate?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
-
-          </div>
-
-      </div>
+    </div>
 
   </footer>
 
-      <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
-      <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
+  <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
+  <script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('mobile-exit');
 
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+    })
 
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    </script>
-     <a href="tel:9892956959" class="floating-icon"><i class="fa fa-phone"></i></a>
-     <a href="https:/wa.me/9892956959"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-     <script src="rent.js"></script>
-      
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+    })
+  </script>
+  <a href="tel:9892956959" class="floating-icon"><i class="fa fa-phone"></i></a>
+  <a href="https:/wa.me/9892956959" target="_blank" class="whatsapp_float"><i
+      class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+  <script src="rent.js"></script>
+
 </body>
+
 </html>
