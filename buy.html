@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/domologo1.png">
-    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="rent.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="abcrent.css">
+    <link rel="stylesheet" href="rentfilter.css">
     <link rel="stylesheet" href="floating_icon.css">
 </head>
 <body>
@@ -41,95 +41,84 @@
             </nav>
         </div>
     </div>
-<section class="newnew">
-    <div class="dropdown">
-        <div class="select">
-            <span class="selected">For Rent/Buy</span>
-            <div class="caret"></div>
-    </div>
-    <ul class="menu">
-        <li class="active"> rent</li>
-        <li>Buy</li>
-        
-    </ul>
-    </div>
-<div class="dropdown">
-    <div class="select">
-        <span class="selected">BHK</span>
-        <div class="caret"></div>
-</div>
-<ul class="menu">
-    <li class="active">BHK</li>
-    <li>1 BHK</li>
-    <li>2 BHK</li>
-    <li>3 BHK</li>
-    <li>4 BHK</li>
-    <li>5 BHK</li>
-</ul>
-</div>
-<div class="dropdown">
-    <div class="select">
-        <span class="selected">Area</span>
-        <div class="caret"></div>
-</div>
-<ul class="menu">
-    <li class="active">Area</li>
-    <li>Mumbai</li>
-    <li>Thane</li>
-    <li>Parel</li>
-    <li>Sion</li>
-    <li>Pune</li>
-</ul>
-</div>
-<div class="dropdown">
-  <div class="select">
-      <span class="selected">Price</span>
-      <div class="caret"></div>
-</div>
-<ul class="menu">
-  <div class="dropdown1 min">
-      <select class="min-dropdown">
-          <option value="more">Min:</option>
-          <option value="1">1 Cr</option>
-          <option value="2">2 Cr</option>
-          <option value="3">3 Cr</option>
-          <option value="4">4 Cr</option>
-          <option value="5">5 Cr</option>
-
-      </select>
-  </div>
-  <div class="dropdown1 max">
-      <select class="max-dropdown">
-          <option value="max">Max:</option>
-          <option value="1">1 Cr</option>
-          <option value="2">2 Cr</option>
-          <option value="3">3 Cr</option>
-          <option value="4">4 Cr</option>
-          <option value="5">5 Cr</option>
-      </select>
-  </div>
-</ul>
-</div>
-<div class="dropdown">
-    <div class="select">
-        <span class="selected">More</span>
-        <div class="caret"></div>
-</div>
-<ul class="menu">
-    <li class="active">More</li>
-    <li>Move in Date:<input type="date"/>
-        </li>
-    <li>Amenities<input type="checkbox"></li>
-    <li>Pets<input type="checkbox"></li>
-    <li>Sea View<input type="checkbox"></li>
-    <li>City View<input type="checkbox"></li>
-</ul>
-</div>
-
-<div class="dropdown">
-    <div class="select">
-        <span class="selected">Save Changes</span>
-        </div>
+    <section class="newfilter">
+      <form id="search-form">
+        <div class="search-filter-bar">
+          <div class="search-contain">
+            <select class="dropdown">
+              <option value="rent">Rent</option>
+              <option value="Buy">Buy</option>
+              
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="search-contain">
+            <select class="dropdown">
+              <option value="bedrooms">BHK</option>
+              <option value="bedrooms">1 BHK</option>
+              <option value="bedrooms">2 BHK</option>
+              <option value="bedrooms">3 BHK</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="search-contain">
+            <select class="dropdown">
+              <option value="Area">Area</option>
+              <option value="Parel">Parel</option>
+              <option value="Worli">Worli</option>
+              <option value="Sion">Sion</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="search-contain">
+          <div class="dropdown2 price-dropdown">
+            <button class="dropdown-toggle price-button" id="priceDropdown" aria-haspopup="true" aria-expanded="false">Price</button>
+            <div class="dropdown-menu price-menu" aria-labelledby="priceDropdown">
+              <ul class="menu">
+                <li>
+                  <div class="dropdown1 min">
+                    <select class="min-dropdown">
+                      <option value="0">Min:</option>
+                      <option value="1.2">1.2L</option>
+                      <option value="1.4">1.4L</option>
+                      <option value="1.6">1.6L</option>
+                      <option value="1.8">1.8L</option>
+                      <option value="2">2L</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown1 max">
+                    <select class="max-dropdown">
+                      <option value="more">Max:</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="search-contain">
+            <div class="dropdown2">
+              <button class="dropdown-toggle" id="moreDropdown" aria-haspopup="true" aria-expanded="false">More</button>
+              <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                <label for="move-in-date">Move in date:</label>
+                <input type="date" id="move-in-date" class="datepicker">
+                <label><input type="checkbox" name="more-options" value="no-amenities">With Amenities</label>
+                <label><input type="checkbox" name="more-options" value="no-amenities">Without Amenities</label>
+                <label><input type="checkbox" name="more-options" value="no-pets">With Pets</label>
+                <label><input type="checkbox" name="more-options" value="no-pets">Without Pets</label>
+                <label><input type="checkbox" name="more-options" value="sea-view">Sea View</label>
+                <label><input type="checkbox" name="more-options" value="sea-view">City View</label>
+              </div>
+            </div>
+          </div>
+          <div class="search-contain">
+            <button type="submit" id="search-button" class="save-search-button">Search</button>
+    
+          </div>
+          </div>
+        </form>
     </section>
     <section class="card-section">
       <a href="property.html" class="card">
@@ -284,7 +273,7 @@
     </script>
      <a href="tel:9892956959" class="floating-icon"><i class="fa fa-phone"></i></a>
      <a href="https:/wa.me/9892956959"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-    <script src="abcrent.js"></script>  
+     <script src="rent.js"></script>
       
 </body>
 </html>
