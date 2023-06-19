@@ -1009,3 +1009,16 @@ p {
 .owl-nav span:hover {
   background: black;
 }
+
+/* progress bar css */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: #64c2e2;
+  transition: width 500ms linear;
+  z-index: 999;
+}

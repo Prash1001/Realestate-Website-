@@ -14,6 +14,7 @@
 
 <body>
     <div class="navbar">
+        <div class="progress-bar"></div>
         <div class="container">
             <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
@@ -229,6 +230,26 @@
             input.addEventListener("blur", blurFunc);
         });
     </script>
+    <script>
+        window.addEventListener('scroll', function() {
+      
+          const progressBar = document.querySelector('.progress-bar');
+      
+          const windowHeight = window.innerHeight;
+      
+          const documentHeight = document.documentElement.scrollHeight;
+      
+          const maximumScroll = documentHeight - windowHeight;
+      
+          let scrollY = window.scrollY;
+      
+          let progress = Math.round((scrollY / maximumScroll) * 100); 
+      
+          progressBar.style.width = `${progress}%`;
+      
+      });
+      </script>
+      
     <a href="tel:1234567890" class="floating-icon"><i class="fa fa-phone"></i></a>
     <a href="https:/wa.me/" target="_blank" class="whatsapp_float"><i
             class="fa-brands fa-whatsapp whatsapp-icon"></i></a>

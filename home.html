@@ -23,6 +23,7 @@
 </head>
 <body>
     <div class="navbar">
+      <div class="progress-bar"></div>
         <div class="container">
             <a class="logo" href="home.html"><img src="images/domologo.png" alt="DoMo"></a>
            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
@@ -432,6 +433,29 @@
       }
     })
   </script>
+
+  <!-- progress bar javascript -->
+  <script>
+    window.addEventListener('scroll', function() {
+  
+      const progressBar = document.querySelector('.progress-bar');
+  
+      const windowHeight = window.innerHeight;
+  
+      const documentHeight = document.documentElement.scrollHeight;
+  
+      const maximumScroll = documentHeight - windowHeight;
+  
+      let scrollY = window.scrollY;
+  
+      let progress = Math.round((scrollY / maximumScroll) * 100); 
+  
+      progressBar.style.width = `${progress}%`;
+  
+  });
+  </script>
+  <!-- progress bar js ends -->
+  
   <script src="https://kit.fontawesome.com/ffe2fa34cb.js" crossorigin="anonymous"> </script>
 
 </body>
