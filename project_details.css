@@ -518,7 +518,19 @@ nav li a:hover {
    margin: 0.5em;
    cursor: pointer;
 }
-
+/* progress bar */
+.progress-bar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 0;
+   height: 5px;
+   background-color: #cb570f;
+   transition: width 500ms linear;
+   z-index: 999;
+ }
+ 
 @media only screen and (min-width: 1025px) {
 
    .mobile-menu,
