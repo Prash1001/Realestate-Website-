@@ -1,372 +1,411 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 :root {
-    --primary-color: #007AF3;
+  --primary-color: #007AF3;
+}
+
+
+.left-content h2 {
+  font-family: 'arimo', sans-serif;
+}
+
+.left-content p {
+  font-family: 'Public Sans', sans-serif;
+  padding: 5px;
+  padding-right: 40px;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.navbar {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 0.5em;
+  padding-left: 1em;
+  height: 70px;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: inline-block;
+  height: 45px;
+  width: 100%;
+}
+
+
+.navbar .logo img {
+  height: 100%;
+
+}
+
+/* Other styles for the navigation and mobile menu icons go here */
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Add this line */
+  padding-top: 10px;
+  /* Adjust this value as needed */
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+
+s a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
   }
-  .navbar {
-    margin: 0;
-    font-family: "Poppins";
+
+  .navbar .container5 {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+
+
   }
-  
-  .navbar {
-    background: white;
-    padding: 0.5em;
-    padding-left: 1em;
-    height: 70px;
-    align-items: center;
+
+  .navbar .logo img {
+    height: 100%;
   }
 
   .navbar .logo {
     display: inline-block;
-    height: 45px;
-    width: 100%;
+    position: absolute;
+    left: 48%;
+    height: 80px;
+    width: 20%;
+    transform: translateX(-5%);
+    padding-bottom: 30px;
   }
 
-  
-  .navbar .logo img {
-    height: 100%;
-
-  }
-  
-  /* Other styles for the navigation and mobile menu icons go here */
-  
   .navbar nav {
-    display: none;
-  }
-  .navbar .container5 {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Add this line */
-    padding-top: 10px; /* Adjust this value as needed */
-  }
-  
-  .navbar .mobile-menu {
-    cursor: pointer;
-    padding-top: 10px;
-  }
-  
-
-  s
-
-  a {
-    color: #444444;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav.menu-btn {
-    display: block;
-  }
-
-  nav {
-    position: fixed;
-    z-index: 999;
+    background: none;
+    position: unset;
+    height: 60px;
     width: 100%;
-    right: 0;
-    top: 0;
-    background: #20272E;
-    height: 100vh;
-    padding: 1em;
-    
+    padding: 0px;
+    align-items: center;
   }
-  nav ul.primary-nav {
-    margin-top: 5em;
+
+  .navbar nav ul {
+    display: flex;
+    padding-right: 0.5em;
   }
-  nav li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em;
-    font-size: 1.3em;
+
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+
+  .navbar .tertiary-nav {
+    position: absolute;
+    right: 0%;
+    padding-right: 30px;
+    padding-bottom: 20px;
     text-align: center;
   }
 
-
-  nav li a:hover {
-    font-weight: bold;
-  }
-  
-  .mobile-menu-exit {
-    float: right;
-    margin: 0.5em;
-    cursor: pointer;
-  }
-  
-  @media only screen and (min-width: 1025px) {
-    .mobile-menu, .mobile-menu-exit {
-      display: none;
-    }
-    .navbar .container5 {
-      display: grid;
-      grid-template-columns: 180px auto;
-      justify-content: unset;
-
-
-    }
-    .navbar .logo img {
-      height: 100%;
-    }
-    
-    .navbar .logo {
-      display: inline-block;
-      position: absolute;
-      left:48%;
-      height: 80px;
-      width: 20%;
-      transform: translateX(-5%);
-      padding-bottom: 30px;
-    }
-    .navbar nav {
-      display: flex;
-      justify-content: space-between;
-      background: none;
-      position: unset;
-      height:60px ;
-      width: 100%;
-      padding: 0px;
-      align-items: center;
-    }
-    .navbar nav ul {
-      display: flex;
-      padding-right: 0.5em;
-    }
-    .navbar nav a {
-      color: black;
-      font-size: 1em;
-      padding: 0.1em 1em;
-    }
-    .navbar .tertiary-nav {
-      position: absolute;
-      right:0%;
-      padding-right: 30px;
-      padding-bottom: 20px;
-      text-align: center;
-  }
   .navbar .secondary-nav {
     text-align: center;
     padding-bottom: 20px;
-}
-    .navbar nav ul.primary-nav {
-      margin: 0;
-    }
-    .navbar nav li.current a {
-      font-weight: bold;
-    }
-    .navbar nav li.go-premium-cta a {
-      color: var(--primary-color);
-      border: 3px solid var(--primary-color);
-      font-weight: bold;
-      border-radius: 5em;
-      margin-top: -0.2em;
-    }
-    .navbar nav li.go-premium-cta a:hover {
-      background: var(--primary-color);
-      color: white;
-    }
   }
-  @media only screen and (min-width: 1080px) {
-    .container5 {
-      
-      margin: 0 auto;
-    }
- 
-    .primary-cta {
-      margin-right: 1em;
-    }}
+
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+
+  .navbar nav li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+
+  .navbar nav li.go-premium-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container5 {
+
+    margin: 0 auto;
+  }
+
+  .primary-cta {
+    margin-right: 1em;
+  }
+}
 
 
-    .footer-distributed{
-      background: #050144;
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-      box-sizing: border-box;
-      width: 100%;
-      text-align: left;
-      font: bold 16px sans-serif;
-      padding: 55px 50px;
-    }
-    .footer-distributed .footer-left .logofooter {
-    display: inline-block;
-    height: 50px;
-    }
-    
-    .footer-distributed .footer-left .logofooter  img {
-    height: 100%;
-    }
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-      display: inline-block;
-      vertical-align: top;
-    }
-    
-    /* Footer left */
-    
-    .footer-distributed .footer-left{
-      width: 40%;
-    }
-    
-    /* The company logo */
-    
-    .footer-distributed h3{
-      color:  #ffffff;
-      font: normal 36px 'Open Sans', cursive;
-      margin: 0;
-    }
-    
-    .footer-distributed h3 span{
-      color:  lightseagreen;
-    }
-    
-    /* Footer links */
-    
-    .footer-distributed .footer-links{
-      color:  #ffffff;
-      margin: 20px 0 12px;
-      padding: 0;
-    }
-    
-    .footer-distributed .footer-links a{
-      display:inline-block;
-      line-height: 1.8;
-    font-weight:400;
-      text-decoration: none;
-      color:  inherit;
-    }
-    
-    .footer-distributed .footer-company-name{
-      color:  #222;
-      font-size: 14px;
-      font-weight: normal;
-      margin: 0;
-    }
-    
-    /* Footer Center */
-    
-    .footer-distributed .footer-center{
-      width: 35%;
-    }
-    
-    .footer-distributed .footer-center i{
-      background-color:  #33383b;
-      color: #ffffff;
-      font-size: 25px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 42px;
-      margin: 10px 15px;
-      vertical-align: middle;
-    }
-    
-    .footer-distributed .footer-center i.fa-envelope{
-      font-size: 17px;
-      line-height: 38px;
-    }
-    
-    .footer-distributed .footer-center p{
-      display: inline-block;
-      color: #ffffff;
-    font-weight:400;
-      vertical-align: middle;
-      margin:0;
-    }
-    
-    .footer-distributed .footer-center p span{
-      display:block;
-      font-weight: normal;
-      font-size:14px;
-      line-height:2;
-    }
-    
-    .footer-distributed .footer-center p a{
-      color:  lightseagreen;
-      text-decoration: none;;
-    }
-    
-    .footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 20px;
-    left: 0;
-    color: #fff;
-    display: inline-block;
-    padding-right: 5px;
-    }
-    
-    .footer-distributed .footer-links .link-1:before {
-    content: none;
-    }
-    
-    /* Footer Right */
-    
-    .footer-distributed .footer-right{
-      width: 20%;
-    }
-    
-    .footer-distributed .footer-company-about{
-      line-height: 20px;
-      color:  #92999f;
-      font-size: 13px;
-      font-weight: normal;
-      margin: 0;
-    }
-    
-    .footer-distributed .footer-company-about span{
-      display: block;
-      color:  #ffffff;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    
-    .footer-distributed .footer-icons{
-      margin-top: 25px;
-    }
-    
-    .footer-distributed .footer-icons a{
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      background-color:  #33383b;
-      border-radius: 2px;
-    
-      font-size: 20px;
-      color: #ffffff;
-      text-align: center;
-      line-height: 35px;
-    
-      margin-right: 3px;
-      margin-bottom: 5px;
-    }
-    
-    /* If you don't want the footer to be responsive, remove these media queries */
-    
-    @media (max-width: 880px) {
-    
-      .footer-distributed{
-          font: bold 14px sans-serif;
-      }
-    
-      .footer-distributed .footer-left,
-      .footer-distributed .footer-center,
-      .footer-distributed .footer-right{
-          display: block;
-          width: 100%;
-          margin-bottom: 40px;
-          text-align: center;
-      }
-    
-      .footer-distributed .footer-center i{
-          margin-left: 0;
-      }
-    
-    }
+.footer-distributed {
+  background: #050144;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left .logofooter {
+  display: inline-block;
+  height: 50px;
+}
+
+.footer-distributed .footer-left .logofooter img {
+  height: 100%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
 
 
 
@@ -388,7 +427,6 @@
 /* slider code */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -397,7 +435,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'arimo', sans-serif;
 }
 
 .container {
@@ -423,7 +461,8 @@ select {
   margin-top: 5%;
 }
 
-.left, .right {
+.left,
+.right {
   width: 50%;
   padding: 20px;
 }
@@ -831,7 +870,7 @@ button {
 
 
 
-.blog-post{
+.blog-post {
   max-width: 1240px;
   height: auto;
   display: grid;
@@ -839,29 +878,29 @@ button {
   gap: 28px;
 }
 
-.card-image img{
+.card-image img {
   width: 100%;
 }
 
 @media (min-width: 600px) {
-  .blog-post{
-      grid-template-columns: repeat(2, 1fr);
+  .blog-post {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 920px) {
-  .blog-post{
-      grid-template-columns: repeat(3, 1fr);
+  .blog-post {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1200px) {
-  .blog-post{
-      grid-template-columns: repeat(4, 1fr);
+  .blog-post {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.news{
+.news {
   margin: 20px auto;
   padding: 20px;
   display: flex;
@@ -869,7 +908,8 @@ button {
   justify-content: center;
   align-items: center;
 }
-.newsection{
+
+.newsection {
   margin: 200px auto;
   padding: 20px;
   display: flex;
@@ -878,7 +918,7 @@ button {
   align-items: center;
 }
 
-.title-section{
+.title-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -887,15 +927,15 @@ button {
   margin-bottom: 20px;
 }
 
-.title-section h1{
+.title-section h1 {
   font-size: 32px;
 }
 
-.title-section span{
+.title-section span {
   color: #ed445b;
 }
 
-.title-section::after{
+.title-section::after {
   content: '';
   width: 100px;
   height: 2px;
@@ -903,7 +943,7 @@ button {
   margin-top: 20px;
 }
 
-.card{
+.card {
   background: #e0e0e0;
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #fff;
   transition: 0.3s ease-in-out;
@@ -913,25 +953,25 @@ button {
   padding: 12px 14px;
 }
 
-.card-content h2{
+.card-content h2 {
   font-size: 24px;
 }
 
-.card-content h2 a{
+.card-content h2 a {
   text-decoration: none;
   color: #333;
   transition: 0.2s ease-in-out;
 }
 
-.card-content h2 a:hover{
+.card-content h2 a:hover {
   color: #ed445b;
 }
 
-.card-content p{
+.card-content p {
   margin-top: 10px;
 }
 
-.card-content button{
+.card-content button {
   padding: 4px 8px;
   margin: 12px 0;
   border: 1px solid #ed445b;
@@ -943,12 +983,12 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-.card-content button:hover{
+.card-content button:hover {
   background: transparent;
   color: #333;
 }
 
-.card:hover{
+.card:hover {
   transform: translate(2%, -2%);
 }
 
@@ -990,26 +1030,26 @@ button {
   max-width: 100%;
 
 }
+
 .left-content {
   flex: 1;
 }
 
-.left-content h2
-{
+.left-content h2 {
   font-size: 3.0em;
-  padding-top: 0.5em ;
+  padding-top: 0.5em;
 
   text-align: left;
 
 }
-.left-content p
-{
+
+.left-content p {
 
   text-align: justify;
 
 }
-.left-content form 
-{
+
+.left-content form {
 
   text-align: left;
 
@@ -1024,106 +1064,104 @@ button {
 @media (min-width: 769px) {
 
   .content-section {
-    background-color:#fff;
-    font-family: "Poppins";
+    background-color: #fff;
+    font-family: 'arimo', sans-serif;
   }
-  
+
   .two {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     padding-left: 0px;
     padding-right: 0px;
   }
-  
+
   .left-content {
     flex: 1;
   }
-  
-  .left-content h2
-  {
+
+  .left-content h2 {
     font-size: 3.0em;
-    padding-top: 0.5em ;
+    padding-top: 0.5em;
     padding-left: 90px;
     text-align: left;
-    max-width:800px ;
+    max-width: 800px;
   }
-  .left-content p
-  {
+
+  .left-content p {
     padding-left: 90px;
     text-align: justify;
-    max-width:800px ;
+    max-width: 800px;
   }
-  .left-content form 
-  {
+
+  .left-content form {
     padding-left: 90px;
     text-align: left;
-    max-width:800px;
+    max-width: 800px;
   }
-  
+
   .right-content {
     display: flex;
     position: relative;
   }
-  
+
   .right-content img {
     padding-right: 90px;
     padding-left: 40px;
-  
+
     max-height: 500px;
     max-width: 700px;
 
   }
-  
+
 }
 
 @media (min-width: 768px) and (max-width: 1084px) {
   .content-section {
-    background-color:#fff;
-    font-family: "Poppins";
+    background-color: #fff;
+    font-family: 'arimo', sans-serif;
   }
-  
+
   .two {
     display: flex;
   }
-  
+
   .left-content {
     flex: 1;
   }
-  
-  .left-content h2
-  {
+
+  .left-content h2 {
     font-size: 3.0em;
-    padding-top: 0.5em ;
+    padding-top: 0.5em;
     padding-left: 90px;
     text-align: left;
-    max-width:700px ;
+    max-width: 700px;
   }
-  .left-content p
-  {
+
+  .left-content p {
     padding-left: 90px;
     text-align: justify;
-    max-width:700px ;
+    max-width: 700px;
   }
-  .left-content form 
-  {
+
+  .left-content form {
     padding-left: 90px;
     text-align: left;
-    max-width:700px;
+    max-width: 700px;
   }
-  
+
   .right-content {
     display: flex;
     position: relative;
   }
-  
+
   .right-content img {
     padding-right: 90px;
-  
+
     max-height: 500px;
     max-width: 500px;
     text-align: right;
   }
-  
+
 }
 
 .about-us {
@@ -1137,10 +1175,10 @@ button {
 
 .profile-img img {
   max-width: 85%;
-  
+
 }
 
-.profile-img{
+.profile-img {
   align-self: center;
 }
 
