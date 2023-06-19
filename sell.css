@@ -257,7 +257,6 @@ nav li a:hover {
   background-color: rgb(188, 235, 255);
   font-family: 'Public Sans', sans-serif;
 }
-
 .two {
   display: flex;
 
@@ -599,132 +598,131 @@ i.fa-envelope {
   }
 
 }
+  @media (min-width: 768px) and (max-width: 1024px) {
+      .two {
+        flex-direction: row;
+      }
+      
+      .left-content, .right-content {
+        width: 50%;
+      }
 
-@media (min-width: 768px) and (max-width: 1025px) {
-  .two {
-    flex-direction: row;
-  }
-
-  .left-content,
-  .right-content {
-    width: 50%;
-  }
-
-
-
-  .left-content h2,
-  .left-content p,
-  .left-content form,
-  .left-content2 h2,
-  .left-content2 p {
-    padding-left: 50px;
-    max-width: 85%;
-  }
-
-  .column {
-    padding-left: 50px;
-  }
-
-
-  .column {
-    margin-left: 50;
-    margin-right: 10px;
-  }
-
-  form {
-    z-index: 10;
-    padding: 2.3rem 3.5rem;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-
-  .input-container {
-    position: relative;
-    margin: 1rem 0;
-  }
-
-  .input-container {
-    width: 100%;
-  }
-
-  .right-content {
-    display: flex;
-    justify-content: center;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .two {
-    flex-direction: column;
-  }
-
-
-  .sell-home-section {
-    padding: 2.5em 1.5em 4em;
-    height: auto;
-    background-size: cover;
-  }
-
-  .left-content h2,
-  .left-content p,
-  .left-content form,
-  .left-content2 h2,
-  .left-content2 p {
-    padding-left: 50px;
-    max-width: 75%;
-  }
-
-  .column {
-    padding-left: 50px;
-  }
-
-
-  .column {
-    margin-left: 50;
-    margin-right: 10px;
-  }
-
-  form {
-    z-index: 10;
-    padding: 2.3rem 3.5rem;
-    overflow: hidden;
-    position: relative;
-    width: 80%;
-  }
-
-  .input-container {
-    position: relative;
-    margin: 1rem 0;
-  }
-
-  .input-container {
-    width: 90%;
-  }
-}
-
-/* edited sell code */
-
+    
+   
+                .left-content h2,
+                .left-content p,
+                .left-content form,
+                .left-content2 h2,
+                .left-content2 p {
+                  padding-left: 50px;
+                  max-width: 85%;
+                }
+          
+                .column {
+                  padding-left: 50px;
+                }
+      
+                
+                .column {
+                  margin-left: 50;
+                  margin-right: 10px;
+                }
+      
+                form {
+                  z-index: 10;
+                  padding: 2.3rem 3.5rem;
+                  overflow: hidden;
+                  position: relative;
+                  width:70%;
+                }
+                .input-container {
+                  position: relative;
+                  margin: 1rem 0;
+                }
+      
+                .input-container{
+                  width:100%;
+                }
+                .right-content {
+                  display: flex;
+                  justify-content: center;
+                }
+ 
+          }
+          @media (min-width: 900px) and (max-width: 1300px){
+            form {
+              z-index: 10;
+              padding: 2.3rem 3.5rem;
+              overflow: hidden;
+              position: relative;
+              width:100%;
+            }
+          }
+          @media (max-width: 767px) {
+            .two{
+              flex-direction: column;
+            }
+            
+                      
+                      .sell-home-section {
+                        padding: 2.5em 1.5em 4em;
+                        height: auto;
+                        background-size:cover;
+                      }
+                      
+                      .left-content h2,
+                      .left-content p,
+                      .left-content form,
+                      .left-content2 h2,
+                      .left-content2 p {
+                        padding-left: 50px;
+                        max-width: 75%;
+                      }
+                
+                      .column {
+                        padding-left: 50px;
+                      }
+            
+                      
+                      .column {
+                        margin-left: 50;
+                        margin-right: 10px;
+                      }
+            
+                      form {
+                        z-index: 10;
+                        padding: 2.3rem 3.5rem;
+                        overflow: hidden;
+                        position: relative;
+                        width:80%;
+                      }
+                      .input-container {
+                        position: relative;
+                        margin: 1rem 0;
+                      }
+            
+                      .input-container{
+                        width:90%;
+                      }
+                }
+            
 .form {
   width: 100%;
-  max-width: 800px;
+  max-width: 820px;
   border-radius: 10px;
   /* background-color: white; */
   /* box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1); */
   /* z-index: 900; */
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  padding-right: 200px;
 }
 
 .contact-form {
   position: relative;
 }
-
 .contact-form:before {
   content: "";
   position: absolute;
@@ -734,20 +732,17 @@ i.fa-envelope {
   top: 50px;
   left: -13px;
 }
-
 form {
   z-index: 10;
   padding: 2.3rem 3.5rem;
   overflow: hidden;
   position: relative;
 }
-
 .input-container {
   position: relative;
   margin: 1rem 0;
 }
-
-select {
+select{
   width: 100%;
   outline: none;
   border: 2px solid black;
@@ -760,7 +755,6 @@ select {
   border-radius: 25px;
   transition: 0.3s;
 }
-
 .input {
   width: 100%;
   outline: none;
@@ -774,7 +768,6 @@ select {
   border-radius: 25px;
   transition: 0.3s;
 }
-
 textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
@@ -782,7 +775,6 @@ textarea.input {
   resize: none;
   overflow-y: auto;
 }
-
 .input-container label {
   position: absolute;
   top: 50%;
@@ -796,12 +788,10 @@ textarea.input {
   z-index: 1000;
   transition: 0.5s;
 }
-
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
 }
-
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: royalblue;
@@ -815,12 +805,10 @@ textarea.input {
   transition: 0.3s;
   margin: 0;
 }
-
 .btn:hover {
   background-color: rgb(42, 69, 150);
   color: #fff;
 }
-
 .input-container span {
   position: absolute;
   top: 0;
@@ -845,7 +833,6 @@ textarea.input {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .card-info {
   justify-content: space-between;
   align-items: center;
@@ -895,9 +882,9 @@ textarea.input {
     right: 70px;
   }
 
+  
 
-
-
+  
 
   .text {
     margin: 1rem 0 1.5rem 0;
@@ -911,7 +898,7 @@ textarea.input {
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;
-    position: relative;
+    position:relative;
   }
 
   .contact-info:before {
@@ -953,6 +940,7 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
+
 /* progress bar css */
 .progress-bar {
   position: fixed;
