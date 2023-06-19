@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 :root {
     --primary-color: #007AF3;
   }
   body {
     margin: 0;
-    font-family: "Poppins";
+    font-family: 'Public Sans', sans-serif;
   }
-  
+  nav {
+    font-family: 'Poppins';
+  }
   .navbar {
     background: white;
     padding: 0.5em;
